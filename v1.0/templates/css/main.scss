@@ -1,0 +1,25 @@
+
+h2 {
+    font-family: 'Monda', sans-serif;
+}
+
+h1 {
+}
+
+div.nav {
+  margin: 5px;
+  border: 2px solid black;
+  padding: 5px;
+  font-size: 120%;
+  .btn_title {
+    display: block;
+    background: white;
+    width: 100%;
+    color: black;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+
