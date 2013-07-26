@@ -8,62 +8,88 @@ MATTHEW ROY ARNOLD - Bristol, UK based fine artist
 {% block inpagecss %}
 h1 img {
     max-width: 100%;
+    max-height: 400px;
     margin-top: 15px;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 15px;
-    
 }
 {% endblock %}
 
 
 {% block header %}
-<img src="img/home_title.png" alt="Matthew Roy Arnold" />
+<div class="row">
+  <div class="small-12 columns">
+    <h1>
+      <img src="{{ root_path }}img/home_title.png" alt="Matthew Roy Arnold" />
+    </h1>
+  </div>
+</div>
 {% endblock %}
 
 {% block navigation %}
-
-<div class="row">
-  <div class="large-8 columns">
-    <div class="nav">
-      <a href="spins/">
-        <span class="btn_title">SPIN PAINTINGS</span>
-        <img src="img/home_spins_btn.jpg" alt="Spins mounted on a wall" />
-      </a>
-    </div>
-  </div>
-  <div class="large-4 columns">
-    <div class="nav">
-      <a href="about.html">
-        <span class="btn_title">ABOUT</span>
-        <img src="img/home_about_btn.jpg" alt="Matt at work" />
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="large-4 columns">
-    <div class="nav">
-      <a href="work.html">Work</a>
-    </div>
-  </div>
-  <div class="large-4 columns">
-    <div class="nav">
-      <a href="exhibitions.html">Exhibitions</a>
-    </div>
-  </div>
-  <div class="large-4 columns">
-    <div class="nav">
-      <a href="http://www.facebook.com/MatthewRoyArnold/">News (Facebook)</a>
-    </div>
-  </div>
-</div>
 {% endblock %}
-
 
 {% block maincontent %}
+
+<div class="row">
+  <div class="large-8 small-12 columns">
+    <div class="nav">
+      <a href="{{ root_path }}spins/">
+        <span class="btn_title">SPIN PAINTINGS</span>
+        <img src="{{ root_path }}img/small/home_spins_btn.jpg"
+          data-interchange="[{{ root_path }}img/small/home_spins_btn.jpg, (default)], [{{ root_path }}img/large/home_spins_btn.jpg, (small)]"
+          alt="Spins mounted on a wall" />
+      </a>
+    </div>
+  </div>
+  <div class="large-4 columns">
+    <div class="nav">
+      <a href="{{ root_path }}work.html">
+        <span class="btn_title">WORK</span>
+        <img src="{{ root_path }}img/small/home_work_btn.jpg" 
+          data-interchange="[{{ root_path }}img/small/home_work_btn.jpg, (default)], [{{ root_path }}img/large/home_work_btn.jpg, (small)]"
+          alt="Other works" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-4 columns">
+    <div class="nav">
+      <a href="{{ root_path }}exhibitions.html">
+        <span class="btn_title">EXHIBITIONS</span>
+        <img src="{{ root_path }}img/small/small.png" 
+          data-interchange="[{{ root_path }}img/small/small.png, (default)], [{{ root_path }}img/large/large.png, (small)]"
+          alt="Previous exhibitions" />
+      </a>
+    </div>
+  </div>
+  <div class="large-4 columns">
+    <div class="nav">
+      <a href="{{ root_path }}about.html">
+        <span class="btn_title">ABOUT</span>
+        <img src="{{ root_path }}img/small/home_about_btn.jpg" 
+          data-interchange="[{{ root_path }}img/small/home_about_btn.jpg, (default)], [{{ root_path }}img/large/home_about_btn.jpg, (small)]"
+          alt="Matt at work" />
+      </a>
+    </div>
+  </div>
+  <div class="large-4 columns">
+    <div class="nav">
+      <a href="http://www.facebook.com/MatthewRoyArnold/">
+        <span class="btn_title">NEWS</span>
+        <img src="{{ root_path }}img/small/small.png"
+          data-interchange="[{{ root_path }}img/small/small.png, (default)], [{{ root_path }}img/large/large.png, (small)]"
+          alt="News on Facebook" />
+      </a>
+    </div>
+  </div>
+</div>
 {% endblock %}
+
+
 
 
 {% block footer %}

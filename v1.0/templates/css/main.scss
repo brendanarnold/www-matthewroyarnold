@@ -1,9 +1,13 @@
 
 h2 {
     font-family: 'Monda', sans-serif;
+    font-weight: normal;
 }
 
 h1 {
+  font-family: 'Monda', sans-serif;
+  font-weight: normal;
+  font-size: 500%;
 }
 
 div.nav {
@@ -19,6 +23,7 @@ div.nav {
   }
   img {
     width: 100%;
+    max-height: 400px;
   }
 }
 

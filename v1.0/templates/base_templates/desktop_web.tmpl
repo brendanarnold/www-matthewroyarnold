@@ -6,11 +6,12 @@
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>{% block title %}{% endblock %}</title>
-  
-  <link rel="stylesheet" href="css/foundation.css" />
-  <link rel="stylesheet" href="css/mra_compiled.css" />
 
-  <script src="js/vendor/custom.modernizr.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" href="{{ root_path }}css/foundation.css" />
+  <link rel="stylesheet" href="{{ root_path }}css/mra_compiled.css" />
+
+  <script src="{{ root_path }}js/vendor/custom.modernizr.js"></script>
 
   <style type="text/css">
 {% block inpagecss %}{% endblock %}
@@ -20,32 +21,26 @@
 <body>
 
 	<div class="row">
-		<div class="small-12 columns">
-      <h1>{% block header %}{% endblock %}</h1>
-		</div>
+    {% block header %}{% endblock %}
 	</div>
 
   {% block navigation %}{% endblock %}
 
-	<div class="row">
-    {% block maincontent %}{% endblock %}
-	</div>
+  {% block maincontent %}{% endblock %}
 
-  <div class="row">
-    {% block footer %}{% endblock %}
-  </div>
+  {% block footer %}{% endblock %}
 
   <script>
-  document.write('<script src=' +
+  document.write('<script src={{ root_path }}' +
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
   '.js><\/script>')
   </script>
   
-  <script src="js/foundation.min.js"></script>
+  <script src="{{ root_path }}js/foundation/foundation.js"></script>
+  <script src="{{ root_path }}js/foundation/foundation.interchange.js"></script>
+
   <!--
-  
-  <script src="js/foundation/foundation.js"></script>
-  
+
   <script src="js/foundation/foundation.alerts.js"></script>
   
   <script src="js/foundation/foundation.clearing.js"></script>
@@ -69,8 +64,6 @@
   <script src="js/foundation/foundation.tooltips.js"></script>
   
   <script src="js/foundation/foundation.topbar.js"></script>
-  
-  <script src="js/foundation/foundation.interchange.js"></script>
   
   <script src="js/foundation/foundation.placeholder.js"></script>
   

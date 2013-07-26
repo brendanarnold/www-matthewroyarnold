@@ -1,0 +1,54 @@
+{% extends base_template %}
+
+{% block title %}
+Spin paintings by MATTHEW ROY ARNOLD
+{% endblock %}
+
+{% block inpagecss %}
+#logo {
+    max-width: 100%;
+    max-height: 400px;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+h1 {
+  font-family: 'Monda', sans-serif;
+  font-weight: normal;
+  font-size: 500%;
+}
+
+{% endblock %}
+
+{% block header %}
+  <div class="row">
+    <div class="small-6 large-3 columns">
+      <a href="../">
+        <img id="logo" src="{{ root_path }}img/home_title.png" alt="Matthew Roy Arnold" />
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <h1>SPIN PAINTINGS</h2>
+    </div>
+  </div>
+{% endblock %}
+
+{% block navigation %}
+{% endblock %}
+
+{% block maincontent %}
+  <div class="row">
+    <div class="small-12 columns">
+      <h2>ABOUT</h2>
+      <p>Matthew first began experimenting with spins in 2011 with oil on acrylic discs.</p>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+

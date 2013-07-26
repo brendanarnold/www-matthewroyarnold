@@ -30,7 +30,12 @@ for (path, dirs, fns) in os.walk(SITE_DIR):
             continue
         tfp = tpath + '/' + fn
         t = env.get_template(tfp)
-        src = t.render(base_template = BASE_TEMPLATE_FN)
+        # Files in subfolders need their relative paths changing - next
+        # few lines builds the relevant path
+        root_path = ''
+        for i in range(len([d for d in tpath.split('/') if d.strip() != '']) - 1):
+          root_path += '../'
+        src = t.render(base_template = BASE_TEMPLATE_FN, root_path = root_path)
         # Create build directory if it does not already exist
         bdirn = os.path.join(BUILD_DIR, path[len(SITE_DIR)+1:])
         if not os.path.isdir(bdirn):
