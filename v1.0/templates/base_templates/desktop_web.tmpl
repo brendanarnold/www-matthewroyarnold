@@ -14,6 +14,7 @@
   -->
   <link rel="stylesheet" href="{{ root_path }}css/foundation.css" />
   <link rel="stylesheet" href="{{ root_path }}css/mra_compiled.css" />
+  <link rel="stylesheet" href="{{ root_path }}css/magnific-popup.css"> 
 
   <script src="{{ root_path }}js/vendor/custom.modernizr.js"></script>
 
@@ -32,7 +33,11 @@
 
   {% block maincontent %}{% endblock %}
 
-  {% block footer %}{% endblock %}
+  {% block footer %}
+  <div class="row">
+    <p id="sign-off">Matthew Roy Arnold 2013 <a href="{{ root_path }}about.html">Contact</a></p>
+  </div>
+  {% endblock %}
 
   <script>
   document.write('<script src={{ root_path }}' +
@@ -42,6 +47,30 @@
   
   <script src="{{ root_path }}js/foundation/foundation.js"></script>
   <script src="{{ root_path }}js/foundation/foundation.interchange.js"></script>
+  <script src="{{ root_path }}js/jquery.magnific-popup.js"></script> 
+
+  <script>
+  $(document).ready(function() {
+    $('.popup-gallery').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Loading image #%curr%...',
+      mainClass: 'mfp-img-mobile',
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+      },
+      image: {
+        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+        titleSrc: function(item) {
+          return item.el.attr('title') + '<small>by Matthew Roy Arnold</small>';
+        }
+      }
+    });
+  });
+
+  </script>
 
   <!--
 
