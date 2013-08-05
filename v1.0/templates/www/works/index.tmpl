@@ -1,0 +1,125 @@
+{% extends base_template %}
+
+{% block title %}
+Works by MATTHEW ROY ARNOLD
+{% endblock %}
+
+{% block inpagecss %}
+#logo {
+    max-width: 100%;
+    max-height: 400px;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.work-container {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+{% endblock %}
+
+{% block header %}
+  <div class="row">
+    <div class="small-6 large-3 columns">
+      <a href="../">
+        <img id="logo" src="{{ root_path }}img/home_title.png" alt="Matthew Roy Arnold" />
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <h1>WORKS</h2>
+    </div>
+  </div>
+{% endblock %}
+
+{% block navigation %}
+{% endblock %}
+
+{% block maincontent %}
+
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      <div class="nav">
+        <a href="{{ root_path }}works/spins.html">
+          <span>Spin Studies</span>
+          <img src="{{ root_path }}img/works_spinstudies_btn.jpg" alt="Example of spin studies" />
+        </a>
+      </div>
+      <p class="nav-caption">The spin studies comprise of the <a href="{{ root_path }}works/imagereactionstudies.html">Image Reaction Studies</a>, the <a href="{{ root_path }}works/placereactionstudies.html">Place Reaction Studies</a> and the <a href="{{ root_path }}works/tastestudies.html">Taste Studies</a> each of which expand on the leitmotif of a simple geometric spin pattern.</p>
+    </div>
+    <div class="small-12 large-6 columns">    
+      <div class="nav">
+        <a href="{{ root_path }}works/spaceforsale.html">
+        <span>Art Space for Sale</span>
+          <img src="{{ root_path }}img/works_spaceforsale_btn.jpg" alt="A Space for Sale canvas" />
+        </a>
+      </div>
+      <p class="nav-caption">Is there room for advertising in art? Can we trust artists to be authentic?</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      <div class="nav">
+        <a href="{{ root_path }}works/selfportraits.html">
+          <span>Outsourced Self Portraits</span>
+          <img src="{{ root_path }}img/works_selfportraits_btn.jpg" alt="Example portrait from Self Portraits" />
+        </a>
+      </div>
+      <p class="nav-caption">Many artists no longer fabricate their own works, with the emphasis in these cases ostensibly being on the concept. These works explore how the nature of the work may be affected by outsourcing practices.</p>
+    </div>
+
+    <div class="small-12 large-6 columns">
+      <div class="nav">
+        <a href="{{ root_path }}works/ideasforsale.html">
+          <span>Art Ideas for Sale</span>
+          <img src="{{ root_path }}img/works_ideasforsale_btn.jpg" alt="An envelope containg an art idea for sale" />
+        </a>
+      </div>
+      <p class="nav-caption">Modern art practice is called into question when we consider through these works if concept too can be outsourced
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      <div class="nav">
+        <a href="{{ root_path }}works/lostandstolen.html">
+          <span>Lost and Stolen</span>
+          <img src="{{ root_path }}img/works_lostandstolen_btn.jpg" alt="Example Lost and Stolen piece" />
+        </a>
+      </div>
+      <p class="nav-caption">A continuously updated document of the things that have gone missing throughout a particular persons life.</p>
+    </div>
+
+    <div class="small-12 large-6 columns">
+      <div class="nav">
+        <a href="{{ root_path }}works/interactionstudies.html">
+          <span>Interaction Studies</span>
+          <img src="{{ root_path }}img/works_interactions_btn.jpg" alt="Sculpture depicting an octopus an lion in combat" />
+        </a>
+      </div>
+      <p class="nav-caption">Studies into using art to explore scenarios that other mediums cannot capture, in particular the impossible meeting of incongruous subjects.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      <div class="nav">
+        <a href="{{ root_path }}works/misc.html">
+          <span>Misc Works</span>
+          <img src="{{ root_path }}img/works_misc_btn.jpg" alt="Miscelleneous works" />
+        </a>
+      </div>
+      <p class="nav-caption">Other individual works my Matthew Roy Arnold including the 'Sistine Table' and 'PCS10-The Good Shepherd'.</p>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+

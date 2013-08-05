@@ -1,14 +1,22 @@
+p {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+}
 
 h2 {
-    font-family: 'Monda', sans-serif;
-    font-weight: normal;
+    font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    // color: black;
 }
 
 h1 {
-  font-family: 'Monda', sans-serif;
-  font-weight: normal;
-  font-size: 500%;
-  color: black;
+  font-family: 'Jura', sans-serif;
+  font-weight: 300;
+  font-size: 92px;
+  line-height: 85px;
 }
 
 div.nav {
@@ -16,16 +24,31 @@ div.nav {
   border: 2px solid black;
   padding: 5px;
   font-size: 120%;
-  .btn_title {
+  span {
+    font-family: 'Roboto', sans-serif;
+    // font-size: 24px;
+    // font-weight: 300;
     display: block;
     background: white;
     width: 100%;
     color: black;
+    text-transform: uppercase;
+    margin-bottom: 6px;
   }
   img {
     width: 100%;
-    max-height: 400px;
   }
+}
+
+.nav-caption {
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.fig-left {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 

@@ -11,17 +11,20 @@ h1 img {
     max-height: 400px;
     margin-top: 15px;
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 50px;
     margin-bottom: 15px;
 }
+
+
+
 {% endblock %}
 
 
 {% block header %}
 <div class="row">
-  <div class="small-12 columns">
+  <div class="small-12 large-6 columns">
     <h1>
-      <img src="{{ root_path }}img/home_title.png" alt="Matthew Roy Arnold" />
+      MATTHEW<br />ROY<br />ARNOLD
     </h1>
   </div>
 </div>
@@ -33,55 +36,52 @@ h1 img {
 {% block maincontent %}
 
 <div class="row">
-  <div class="large-8 small-12 columns">
+  <div class="large-6 small-12 columns">
     <div class="nav">
-      <a href="{{ root_path }}spins/">
-        <span class="btn_title">SPIN PAINTINGS</span>
-        <img src="{{ root_path }}img/small/home_spins_btn.jpg"
-          data-interchange="[{{ root_path }}img/small/home_spins_btn.jpg, (default)], [{{ root_path }}img/large/home_spins_btn.jpg, (small)]"
-          alt="Spins mounted on a wall" />
+      <a href="{{ root_path }}works/">
+        <span>WORKS</span>
+        <img src="{{ root_path }}img/small/home_works_btn.jpg"
+          data-interchange="[{{ root_path }}img/small/home_works_btn.jpg, (default)], [{{ root_path }}img/large/home_works_btn.jpg, (small)]"
+          alt="An example work from the interactions range" />
       </a>
     </div>
   </div>
-  <div class="large-4 columns">
+  <div class="large-6 small-6 columns">
     <div class="nav">
-      <a href="{{ root_path }}work.html">
-        <span class="btn_title">WORK</span>
-        <img src="{{ root_path }}img/small/home_work_btn.jpg" 
-          data-interchange="[{{ root_path }}img/small/home_work_btn.jpg, (default)], [{{ root_path }}img/large/home_work_btn.jpg, (small)]"
-          alt="Other works" />
+      <a href="{{ root_path }}exhibitions/">
+        <span>EXHIBITIONS</span>
+        <img src="{{ root_path }}img/small/home_exhibitions_btn.jpg" 
+          data-interchange="[{{ root_path }}img/small/home_exhibitions_btn.jpg, (default)], [{{ root_path }}img/large/home_exhibitions_btn.jpg, (small)]"
+          alt="Exhibitions" />
       </a>
     </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="large-4 columns">
+  <div class="large-4 small-6 columns">
     <div class="nav">
-      <a href="{{ root_path }}exhibitions.html">
-        <span class="btn_title">EXHIBITIONS</span>
-        <img src="{{ root_path }}img/small/small.png" 
-          data-interchange="[{{ root_path }}img/small/small.png, (default)], [{{ root_path }}img/large/large.png, (small)]"
-          alt="Previous exhibitions" />
+      <a href="{{ root_path }}acquire.html">
+        <span>ACQUIRING WORK</span>
+        <img src="{{ root_path }}img/small/home_acquire_btn.jpg" 
+          data-interchange="[{{ root_path }}img/small/home_acquire_btn.jpg, (default)], [{{ root_path }}img/large/home_acquire_btn.jpg, (small)]"
+          alt="Acquiring work" />
       </a>
     </div>
   </div>
-  <div class="large-4 columns">
+  <div class="large-4 small-6 columns">
     <div class="nav">
       <a href="{{ root_path }}about.html">
-        <span class="btn_title">ABOUT</span>
+        <span>ABOUT</span>
         <img src="{{ root_path }}img/small/home_about_btn.jpg" 
           data-interchange="[{{ root_path }}img/small/home_about_btn.jpg, (default)], [{{ root_path }}img/large/home_about_btn.jpg, (small)]"
           alt="Matt at work" />
       </a>
     </div>
   </div>
-  <div class="large-4 columns">
+  <div class="large-4 small-6 columns">
     <div class="nav">
       <a href="http://www.facebook.com/MatthewRoyArnold/">
-        <span class="btn_title">NEWS</span>
-        <img src="{{ root_path }}img/small/small.png"
-          data-interchange="[{{ root_path }}img/small/small.png, (default)], [{{ root_path }}img/large/large.png, (small)]"
+        <span>NEWS</span>
+        <img src="{{ root_path }}img/small/home_news_btn.jpg"
+          data-interchange="[{{ root_path }}img/small/home_news_btn.jpg, (default)], [{{ root_path }}img/large/home_news_btn.jpg, (small)]"
           alt="News on Facebook" />
       </a>
     </div>
