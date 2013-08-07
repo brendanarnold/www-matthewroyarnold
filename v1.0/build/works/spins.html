@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -15,6 +16,7 @@ Spin studies by MATTHEW ROY ARNOLD
   <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
   -->
   <link rel="stylesheet" href="../css/foundation.css" />
+  <link rel="stylesheet" href="../css/magnific-popup.css" />
   <link rel="stylesheet" href="../css/mra_compiled.css" />
 
   <script src="../js/vendor/custom.modernizr.js"></script>
@@ -83,11 +85,101 @@ Spin studies by MATTHEW ROY ARNOLD
     </div>
   </div>
 
+  <div class="mfp-hide" id="earlycrimson-slideshow">
+    
+<div class="slide">
+  
+  <div class="slide-img-container">
+    <img src="../img/earlycrimson/1.jpg" alt="Early Crimson 1" />
+  </div>
+  
+  <div class="slide-placard">
+    <p class="slide-placard-title">Early Crimson 1</p>
+    <p class="slide-placard-subtitle">
+    <span class="slide-placard-media">Oil on print</span>
+    <span class="slide-placard-date">2011</span>
+    
+    
+  </div>
+</div>
+
+    
+<div class="slide">
+  
+  <div class="slide-img-container">
+    <img src="../img/earlycrimson/2.jpg" alt="Early Crimson 2" />
+  </div>
+  
+  <div class="slide-placard">
+    <p class="slide-placard-title">Early Crimson 2</p>
+    <p class="slide-placard-subtitle">
+    <span class="slide-placard-media">Oil on print</span>
+    <span class="slide-placard-date">2011</span>
+    
+    
+  </div>
+</div>
+
+    
+<div class="slide">
+  
+  <div class="slide-img-container">
+    <img src="../img/earlycrimson/3.jpg" alt="Early Crimson 3" />
+  </div>
+  
+  <div class="slide-placard">
+    <p class="slide-placard-title">Early Crimson 3</p>
+    <p class="slide-placard-subtitle">
+    <span class="slide-placard-media">Oil on print</span>
+    <span class="slide-placard-date">2011</span>
+    
+    
+  </div>
+</div>
+
+    
+<div class="slide">
+  
+  <div class="slide-img-container">
+    <img src="../img/earlycrimson/4.jpg" alt="Early Crimson 4" />
+  </div>
+  
+  <div class="slide-placard">
+    <p class="slide-placard-title">Early Crimson 4</p>
+    <p class="slide-placard-subtitle">
+    <span class="slide-placard-media">Oil on print</span>
+    <span class="slide-placard-date">2011</span>
+    
+    
+  </div>
+</div>
+
+    
+<div class="slide">
+  
+  <div class="slide-img-container">
+    <img src="../img/earlycrimson/5.jpg" alt="Early Crimson 5" />
+  </div>
+  
+  <div class="slide-placard">
+    <p class="slide-placard-title">Early Crimson 5</p>
+    <p class="slide-placard-subtitle">
+    <span class="slide-placard-media">Oil on print</span>
+    <span class="slide-placard-date">2011</span>
+    
+    
+  </div>
+</div>
+
+  </div>
+
   <div class="row">
     <div class="small-12 large-6 columns">
       <div class="nav">
-        <span>Early Crimson</span>
-        <img src="../img/spins_earlycrimson_btn.jpg" alt="Early Crimson" />
+        <a href="#earlycrimson-slideshow" class="slideshow-link">
+          <span>Early Crimson</span>
+          <img src="../img/spins_earlycrimson_btn.jpg" alt="Early Crimson" />
+        </a>
       </div>
       <p class="nav-caption">Commissioned spins overlaid on a selection of images chosen by the patron.</p>
     </div>
@@ -151,6 +243,27 @@ Spin studies by MATTHEW ROY ARNOLD
   
   <script src="../js/foundation/foundation.js"></script>
   <script src="../js/foundation/foundation.interchange.js"></script>
+  <script src="../js/jquery.magnific-popup.js"></script> 
+
+  <script>
+    // The script for the slideshow code
+    // see - http://stackoverflow.com/questions/18067062/
+    $('.slideshow-link').click(function() {
+      // Build an items list for use in Magnific Popup
+      var items = [];
+      $( $(this).attr('href') ).find('.slide').each(function() {
+        items.push(
+          { src : $(this) }
+        );
+      });
+      $.magnificPopup.open({
+        items: items,
+        gallery: {
+          enabled: true
+        }
+      });
+    });
+  </script>
 
   <!--
 

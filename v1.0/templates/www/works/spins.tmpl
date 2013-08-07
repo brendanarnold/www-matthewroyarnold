@@ -61,11 +61,21 @@ Spin studies by MATTHEW ROY ARNOLD
     </div>
   </div>
 
+  <div class="mfp-hide" id="earlycrimson-slideshow">
+    {{ macros.slide('Early Crimson 1', root_path + 'img/earlycrimson/1.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Early Crimson 2', root_path + 'img/earlycrimson/2.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Early Crimson 3', root_path + 'img/earlycrimson/3.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Early Crimson 4', root_path + 'img/earlycrimson/4.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Early Crimson 5', root_path + 'img/earlycrimson/5.jpg', '', '2011', 'Oil on print') }}
+  </div>
+
   <div class="row">
     <div class="small-12 large-6 columns">
       <div class="nav">
-        <span>Early Crimson</span>
-        <img src="{{ root_path }}img/spins_earlycrimson_btn.jpg" alt="Early Crimson" />
+        <a href="#earlycrimson-slideshow" class="slideshow-link">
+          <span>Early Crimson</span>
+          <img src="{{ root_path }}img/spins_earlycrimson_btn.jpg" alt="Early Crimson" />
+        </a>
       </div>
       <p class="nav-caption">Commissioned spins overlaid on a selection of images chosen by the patron.</p>
     </div>

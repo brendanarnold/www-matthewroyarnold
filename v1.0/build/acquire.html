@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -15,6 +16,7 @@ Acquiring work by MATTHEW ROY ARNOLD
   <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
   -->
   <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
   <link rel="stylesheet" href="css/mra_compiled.css" />
 
   <script src="js/vendor/custom.modernizr.js"></script>
@@ -78,6 +80,27 @@ Acquiring work by MATTHEW ROY ARNOLD
   
   <script src="js/foundation/foundation.js"></script>
   <script src="js/foundation/foundation.interchange.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script> 
+
+  <script>
+    // The script for the slideshow code
+    // see - http://stackoverflow.com/questions/18067062/
+    $('.slideshow-link').click(function() {
+      // Build an items list for use in Magnific Popup
+      var items = [];
+      $( $(this).attr('href') ).find('.slide').each(function() {
+        items.push(
+          { src : $(this) }
+        );
+      });
+      $.magnificPopup.open({
+        items: items,
+        gallery: {
+          enabled: true
+        }
+      });
+    });
+  </script>
 
   <!--
 

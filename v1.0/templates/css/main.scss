@@ -58,3 +58,29 @@ div.nav {
   margin-top: 50px;
 }
 
+.slide {
+  position: relative;
+  background: #FFFFFF;
+  padding: 5px;
+  padding-top: 40px;
+  width: auto;
+  max-width: 1000px;
+  margin: 20px auto;
+  .slide-img-container {
+  }
+  .slide-placard {
+    .slide-placard-title {
+      font-weight: 400;
+      margin-bottom: 0px;
+    }
+    .slide-placard-subtitle {
+      font-size: 90%;
+    }
+    .slide-placard-media {
+      font-style: italic;
+    }
+    .slide-placard-date {
+    }
+  }
+}
+

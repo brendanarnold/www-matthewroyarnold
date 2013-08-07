@@ -1,0 +1,17 @@
+{% macro slide(title, src='', copy='', date='', media='') %}
+<div class="slide">
+  {% if src %}
+  <div class="slide-img-container">
+    <img src="{{ src }}" alt="{{ title }}" />
+  </div>
+  {% endif %}
+  <div class="slide-placard">
+    <p class="slide-placard-title">{{ title }}</p>
+    {% if media or date %}<p class="slide-placard-subtitle">
+    {% if media %}<span class="slide-placard-media">{{ media }}</span>{% endif %}
+    {% if date %}<span class="slide-placard-date">{{ date }}</span>{% endif %}
+    {% endif %}
+    {% if copy %}{{ copy }}{% endif %}
+  </div>
+</div>
+{% endmacro %}
