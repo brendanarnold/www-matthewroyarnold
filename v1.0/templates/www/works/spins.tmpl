@@ -43,7 +43,7 @@ Spin studies by MATTHEW ROY ARNOLD
 
       <p>The spins began in 2011 as abstract circular oil paintings on acrylic and glass discs and since then have developed through a series of studies involving a variety of media and contexts. Their abstract yet painterly nature serves as an ideal petri dish for wide ranging examinations into the perception and effects of art.</p>
 
-      <ul>
+      <ul class="nodecoration">
         <li><a href="#imagereactionstudies">Image Reaction Studies</a></li>
         <li><a href="#placereactionstudies">Place Reaction Studies</a></li>
         <li><a href="#tastestudies">Taste Studies</a></li>
@@ -69,6 +69,14 @@ Spin studies by MATTHEW ROY ARNOLD
     {{ macros.slide('Early Crimson 5', root_path + 'img/earlycrimson/5.jpg', '', '2011', 'Oil on print') }}
   </div>
 
+  <div class="mfp-hide" id="excuse-slideshow">
+    {{ macros.slide('Excuse 1', root_path + 'img/excuse/1.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Excuse 2', root_path + 'img/excuse/2.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Excuse 3', root_path + 'img/excuse/3.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Excuse 4', root_path + 'img/excuse/4.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Excuse 5', root_path + 'img/excuse/5.jpg', '', '2011', 'Oil on print') }}
+  </div>
+
   <div class="row">
     <div class="small-12 large-6 columns">
       <div class="nav">
@@ -81,13 +89,15 @@ Spin studies by MATTHEW ROY ARNOLD
     </div>
     <div class="small-12 large-6 columns">
       <div class="nav">
-        <span>Excuse</span>
-        <img src="{{ root_path }}img/spins_excuse_btn.jpg" alt="Excuse" />
+        <a href="#excuse-slideshow" class="slideshow-link">
+          <span>Excuse</span>
+          <img src="{{ root_path }}img/spins_excuse_btn.jpg" alt="Excuse" />
+        </a>
       </div>
       <p class="nav-caption">Spins overlaid on PlayBoy pin-ups.</p>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="small-12 columns">
       <h2 id="placereactionstudies">Place Reaction Studies</h2>
@@ -95,11 +105,21 @@ Spin studies by MATTHEW ROY ARNOLD
     </div>
   </div>
 
+  <div class="mfp-hide" id="uweinstallation-slideshow">
+    {{ macros.slide('UWE Installation', root_path + 'img/uweinstallation/1.jpg', '', '2011', 'Oil on glass') }}
+    {{ macros.slide('UWE Installation', root_path + 'img/uweinstallation/2.jpg', '', '2011', 'Oil on glass') }}
+    {{ macros.slide('UWE Installation', root_path + 'img/uweinstallation/3.jpg', '', '2011', 'Oil on glass') }}
+    {{ macros.slide('UWE Installation', root_path + 'img/uweinstallation/4.jpg', '', '2011', 'Oil on glass') }}
+    {{ macros.slide('UWE Installation', root_path + 'img/uweinstallation/5.jpg', '', '2011', 'Oil on glass') }}
+  </div>
+  
   <div class="row">
     <div class="small-12 large-6 columns">
       <div class="nav">
-        <span>Installation at U.W.E.</span>
-        <img src="{{ root_path }}img/spins_placereactionstudies_btn.jpg" alt="Place Reaction Studies installation at U.W.E." />
+        <a href="#uweinstallation-slideshow" class="slideshow-link">
+          <span>Installation at U.W.E.</span>
+          <img src="{{ root_path }}img/spins_placereactionstudies_btn.jpg" alt="Place Reaction Studies installation at U.W.E." />
+        </a>
       </div>
       <p class="nav-caption">An early installation commissioned by U.W.E.</p>
     </div>
@@ -113,11 +133,21 @@ Spin studies by MATTHEW ROY ARNOLD
     </div>
   </div>
 
+  <div class="mfp-hide" id="exampletaste-slideshow">
+    {{ macros.slide('Red on blue', root_path + 'img/exampletaste/1.jpg', '', '2011', 'Oil on glass') }}
+    {{ macros.slide('Red on blue', root_path + 'img/exampletaste/2.jpg', '', '2011', 'Oil on glass') }}
+    {{ macros.slide('Red on blue', root_path + 'img/exampletaste/3.jpg', '', '2011', 'Oil on glass') }}
+    {{ macros.slide('Red on blue', root_path + 'img/exampletaste/4.jpg', '', '2011', 'Oil on glass') }}
+    {{ macros.slide('Red on blue', root_path + 'img/exampletaste/5.jpg', '', '2011', 'Oil on glass') }}
+  </div>
+
   <div class="row">
     <div class="small-12 large-6 columns">
       <div class="nav">
-        <span>Example Taste Study pieces</span>
-        <img src="{{ root_path }}img/spins_tastestudies_btn.jpg" alt="An example Taste studies piece" />
+        <a href="#exampletaste-slideshow" class="slideshow-link">
+          <span>Example Taste Study pieces</span>
+          <img src="{{ root_path }}img/spins_tastestudies_btn.jpg" alt="An example Taste studies piece" />
+        </a>
       </div>
       <p class="nav-caption">Example Taste Studies pieces</p>
     </div>
