@@ -1,15 +1,30 @@
+$gutter_large: 40px;
+$gutter_normal: 20px;
+$gutter_small: 10px;
+$border_width: 1px;
+$subheader_weight: 300;
+
+
+body {
+  margin: 0px 0px 0px 10px;
+}
+
 p {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 19px;
 }
 
 h2 {
-    font-family: 'Jura', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 30px;
-    // color: black;
+    font-weight: $subheader_weight;
+    font-size: 19px;
+    padding: 5px;
+    display: inline-block;
+    border: $border_width solid black;
+    line-height: 19px;
+    margin: $gutter_normal 0px $gutter_normal 0px;
 }
 
 h1 {
@@ -18,18 +33,18 @@ h1 {
   font-weight: 300;
   font-size: 92px;
   line-height: 85px;
-  margin-bottom: 0.1em;
+  margin-bottom: $gutter_small;
 }
 
 div.nav {
-  margin: 5px;
-  border: 2px solid black;
+  margin: 0px 10px 10px 0px;
+  border: $border_width solid black;
   padding: 5px;
   font-size: 120%;
   span {
     font-family: 'Roboto', sans-serif;
-    // font-size: 24px;
-    // font-weight: 300;
+    font-size: 19px;
+    font-weight: $subheader_weight;
     display: block;
     background: white;
     width: 100%;
@@ -49,24 +64,26 @@ div.nav {
 
 .fig-left {
   float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: $gutter_small;
+  margin-bottom: $gutter_small;
 }
 
 #sign-off {
   text-align: right;
-  border-top: 1px solid black;
-  margin-top: 50px;
+  border-top: $border_width solid black;
+  margin-top: $gutter_large;
+  margin-right: $gutter_small;
 }
+
 
 .slide {
   position: relative;
   background: #FFFFFF;
   padding: 5px;
-  padding-top: 40px;
+  padding-top: $gutter_large;
   width: auto;
   max-width: 1000px;
-  margin: 20px auto;
+  margin: $gutter_normal auto;
   .slide-img-container {
   }
   .slide-placard {
@@ -95,20 +112,43 @@ ul, ol {
 
 
 #logo {
-    max-width: 100%;
-    max-height: 400px;
-    margin-top: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 15px;
+    width: 250px;
+    height: 151px;
+    margin: $gutter_normal 5px $gutter_normal 5px;
 }
 
 .page-type-header {
-  border: 1px solid black;
+  border: $border_width solid black;
   padding: 5px;
   text-transform: uppercase;  
-  margin-bottom: 40px;
+  margin-bottom: $gutter_large;
+  margin-right: 2 * 5px;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: $subheader_weight;
+}
+
+.signed {
   font-size: 19px;
   font-family: Roboto, sans-serif;
   font-weight: 300;
+  margin-top: $gutter_large;
+}
+
+.article-meta-container {
+  font-size: 19px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin-bottom: $newsectionspacer;
+}
+
+address {
+  @extend p;
+  line-height: 1.3;
+  font-style: normal;
+  margin-bottom: $gutter_normal;
+}
+
+li {
+  @extend p;
 }

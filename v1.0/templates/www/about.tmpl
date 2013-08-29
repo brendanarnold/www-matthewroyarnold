@@ -1,0 +1,47 @@
+{% extends base_template %}
+
+{% block title %}
+About MATTHEW ROY ARNOLD
+{% endblock %}
+
+{% block inpagecss %}
+{% endblock %}
+
+{% block header %}
+  {{ macros.standard_header(title='About',
+      type='index',
+      root_path=root_path) }}
+{% endblock %}
+
+{% block navigation %}
+{% endblock %}
+
+{% block maincontent %}
+
+
+  <div class="row">
+    <div class="small-12 columns">
+
+      <h2>Biography</h2>
+
+      <p>Matthew was born and raised in Cleethorpes, UK and moved to Bristol in 2003 to study Fine Art at U.W.E. After graduating he worked in television as a prop maker to support his practice before becoming a full-time artist in 2011.</p>
+
+      <h2>Themes</h2>
+
+      <p>Much of Matthew's work looks at the nature and purpose of art and the artist's role within society.</p>
+
+      <h2>Contact</h2>
+
+      <p>Matthew works from BV Studios in Bristol.</p>
+
+      <address>Room G2<br />BV Studios<br />37 Philip St.<br />Bedminster<br />Bristol<br />BS3 4EA</address>
+
+      <p>Email: {{ macros.email() }}</p>
+
+      <p>Facebook: <a href="http://www.facebook.com/MatthewRoyArnold">/MatthewRoyArnold</a></p>
+
+    </div>
+  </div>
+{% endblock %}
+
+

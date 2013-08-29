@@ -1,0 +1,61 @@
+{% extends base_template %}
+
+{% block title %}
+Acquiring work for corporations by MATTHEW ROY ARNOLD
+{% endblock %}
+
+{% block inpagecss %}
+{% endblock %}
+
+{% block header %}
+  {{ macros.standard_header(title='Aquiring Work',
+      type='corporate',
+      root_path=root_path) }}
+{% endblock %}
+
+{% block navigation %}
+{% endblock %}
+
+{% block maincontent %}
+
+  <div class="mfp-hide" id="tastestudies-slideshow">
+    {{ macros.slide('Taste piece featuring ...', src=root_path + 'acquire/taste/1.jpg', copy='') }}
+    {{ macros.slide('Taste piece featuring ...', src=root_path + 'acquire/taste/1.jpg', copy='') }}
+    {{ macros.slide('Taste piece featuring ...', src=root_path + 'acquire/taste/1.jpg', copy='') }}
+    {{ macros.slide('Taste piece featuring ...', src=root_path + 'acquire/taste/1.jpg', copy='') }}
+  </div>
+
+  <div class="mfp-hide" id="imagereactionstudies-slideshow">
+    {{ macros.slide('Image reaction studies ...', src=root_path + 'acquire/imagereactionstudies/1.jpg', copy='') }}
+    {{ macros.slide('Image reaction studies ...', src=root_path + 'acquire/imagereactionstudies/1.jpg', copy='') }}
+    {{ macros.slide('Image reaction studies ...', src=root_path + 'acquire/imagereactionstudies/1.jpg', copy='') }}
+    {{ macros.slide('Image reaction studies ...', src=root_path + 'acquire/imagereactionstudies/1.jpg', copy='') }}
+  </div>
+
+  <div class="mfp-hide" id="placereactionstudies-slideshow">
+    {{ macros.slide('Place reaction studies ...', src=root_path + 'acquire/placereactionstudies/1.jpg', copy='') }}
+    {{ macros.slide('Place reaction studies ...', src=root_path + 'acquire/placereactionstudies/1.jpg', copy='') }}
+    {{ macros.slide('Place reaction studies ...', src=root_path + 'acquire/placereactionstudies/1.jpg', copy='') }}
+    {{ macros.slide('Place reaction studies ...', src=root_path + 'acquire/placereactionstudies/1.jpg', copy='') }}
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+
+      <h2>Installations</h2>
+
+      <p><em>Looking for a dynamic work that changes with season?</em> The <a href="#placereactionstudies-slideshow" class="slideshow-link">Place Reaction Studies</a> can be installed by the artist in a composition and range of colours exactly suitable for your own business environment. Alternate sets of discs can be supplied with easily swapped velcro mounts to allow the disc paintings to be changed throughout the year giving a dynamic, seasonal change of colours to the space.</p> 
+
+      <p>Previous clients have included the University of West England, Frenchay and a Place Reaction Study installation was exhibited in the Royal West of England gallery in 2010.</p>
+
+      <p>Prices start at &pound;2,000 for a 3&times;5 m installation &ndash; for more details email {{ macros.email() }}</p>
+
+      <h2>Ready to hang</h2>
+
+      <p>The <a href="#teststudies-slideshow">Taste Studies</a> make an ideal hanging for private offices. The works feature clean lines combined with traditional artistic practice in oil paints. Large pieces begin at &pound;75 (plus delivery) and even even larger pieces are available on request.</p> 
+
+    </div>
+  </div>
+{% endblock %}
+
+

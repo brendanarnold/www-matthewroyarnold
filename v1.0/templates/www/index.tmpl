@@ -6,23 +6,12 @@ MATTHEW ROY ARNOLD - Bristol, UK based fine artist
 
 
 {% block inpagecss %}
-h1 img {
-    max-width: 100%;
-    max-height: 400px;
-    margin-top: 15px;
-    margin-left: 5px;
-    margin-right: 50px;
-    margin-bottom: 15px;
-}
-
-
-
 {% endblock %}
 
 
 {% block header %}
 <div class="row">
-  <div class="small-12 large-6 columns">
+  <div class="small-12 columns">
     <h1>
       MATTHEW<br />ROY<br />ARNOLD
     </h1>
@@ -58,7 +47,7 @@ h1 img {
   </div>
   <div class="large-4 small-6 columns">
     <div class="nav">
-      <a href="{{ root_path }}acquire.html">
+      <a href="{{ root_path }}acquire/index.html">
         <span>ACQUIRING WORK</span>
         <img src="{{ root_path }}img/small/home_acquire_btn.jpg" 
           data-interchange="[{{ root_path }}img/small/home_acquire_btn.jpg, (default)], [{{ root_path }}img/large/home_acquire_btn.jpg, (small)]"

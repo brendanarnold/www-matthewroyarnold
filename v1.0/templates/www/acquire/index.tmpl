@@ -1,0 +1,47 @@
+{% extends base_template %}
+
+{% block title %}
+Acquiring work by MATTHEW ROY ARNOLD
+{% endblock %}
+
+{% block inpagecss %}
+{% endblock %}
+
+{% block header %}
+  {{ macros.standard_header(title='Aquiring Work',
+      type='index',
+      root_path=root_path) }}
+{% endblock %}
+
+{% block navigation %}
+{% endblock %}
+
+{% block maincontent %}
+
+
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      {{ macros.captioned_img(src=root_path + "img/acquire_individual_btn.jpg",
+            url=root_path + "acquire/individual.html",
+            title="Individuals",
+            caption='Information for individuals wanting to obtain work.') }}
+    </div>
+
+    <div class="small-12 large-6 columns">
+      {{ macros.captioned_img(src=root_path + "img/acquire_corporate_btn.jpg",
+            url=root_path + "acquire/corporate.html",
+            title="Corporate",
+            caption='Information for companies wanting to obtain work.') }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      {{ macros.captioned_img(src=root_path + "img/acquire_galleries_btn.jpg",
+            url=root_path + "acquire/galleries.html",
+            title="Galleries",
+            caption='Information for galleries wishing to exhibit work.') }}
+    </div>
+  </div>
+{% endblock %}
+

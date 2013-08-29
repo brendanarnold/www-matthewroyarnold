@@ -1,0 +1,102 @@
+{% extends base_template %}
+
+{% block title %}
+Misc. work by MATTHEW ROY ARNOLD
+{% endblock %}
+
+{% block inpagecss %}
+{% endblock %}
+
+{% block header %}
+  {{ macros.standard_header('Misc. works', 'Works', root_path) }}
+{% endblock %}
+
+{% block navigation %}
+{% endblock %}
+
+{% block maincontent %}
+  <div class="row">
+    <div class="small-12 columns">
+      <ul class="nodecoration">
+        <li><a href="#thegoodshepherd">PCS10-The Good Shepherd</a></li>
+        <li><a href="#sistinetable">Sistine Table</a></li>
+        <li><a href="#artistinsculpture">The Artist in Sculpture</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <h2 id="thegoodshepherd">PCS10-The Good Shepherd</h2>
+      <p>An examination of the practice of mass produced artworks. This is a paint by numbers done to the letter.</p>
+    </div>
+  </div>
+
+  <div class="mfp-hide" id="thegoodshepherd-slideshow">
+    {{ macros.slide('PCS10-The Good Shepherd', root_path + 'img/thegoodshepherd/1.jpg', '', '2009', 'Acrylic on printed canvas') }}
+    {{ macros.slide('PCS10-The Good Shepherd', root_path + 'img/thegoodshepherd/2.jpg', '', '2009', 'Acrylic on printed canvas') }}
+  </div>
+    
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      {{ macros.captioned_img(src=root_path + "img/misc_thegoodshepherd_btn.jpg",
+          url="#thegoodshepherd-slideshow",
+          title="PCS10-The Good Shepherd",
+          is_slideshow=True,
+          caption="A selection of images of the finished paint-by-numbers" ) }}
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="small-12 columns">
+      <h2 id="sistinetable">Sistine Table</h2>
+      <p>The role of authenticity is brought to the fore in this piece. Viewers are not informed that the images shown through the projector are actually of a fresco painted on the underside of the table on which it sits. It asks `Why do we visit galleries and museums?'</p>
+    </div>
+  </div>
+
+  <div class="mfp-hide" id="sistinetable-slideshow">
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/1.jpg', '', '2007', 'Oil on table and projector') }}
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/2.jpg', '', '2007', 'Oil on table and projector') }}
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/3.jpg', '', '2007', 'Oil on table and projector') }}
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/4.jpg', '', '2007', 'Oil on table and projector') }}
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      {{ macros.captioned_img(src=root_path + "img/misc_sistinetable_btn.jpg",
+          url="#sistinetable-slideshow",
+          title="Sistine Table",
+          is_slideshow=True,
+          caption="A selection of images of the installation" ) }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <h2 id="artistinsculpture">The Artist in Sculpture</h2>
+      <p>A series of works based on a sculpture of the artists own image.</p>
+    </div>
+  </div>
+
+  <div class="mfp-hide" id="artistinsculpture-slideshow">
+    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/1.jpg', '', '2013', 'Perspex, latex, oil paints') }}
+    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/2.jpg', '', '2013', 'Perspex, latex, oil paints') }}
+    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/3.jpg', '', '2013', 'Concrete, perspex, oil paints, latex') }}
+    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/4.jpg', '', '2013', 'Concrete, perspex, oil paints, latex') }}
+    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/5.jpg', '', '2013', 'Sculpy, oil paints') }}
+    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/6.jpg', '', '2013', 'Sculpy, oil paints') }}
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      {{ macros.captioned_img(src=root_path + "img/misc_artistinsculpture_btn.jpg",
+          url="#artistinsculpture-slideshow",
+          title="Artist in Sculpture",
+          is_slideshow=True,
+          caption="A selection of sculptures based on casts of the artists head." ) }}
+    </div>
+  </div>
+
+{% endblock %}

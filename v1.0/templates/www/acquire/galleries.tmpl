@@ -1,0 +1,40 @@
+{% extends base_template %}
+
+{% block title %}
+Acquiring work for galleries by MATTHEW ROY ARNOLD
+{% endblock %}
+
+{% block inpagecss %}
+{% endblock %}
+
+{% block header %}
+  {{ macros.standard_header(title='Aquiring Work',
+      type='galleries',
+      root_path=root_path) }}
+{% endblock %}
+
+{% block navigation %}
+{% endblock %}
+
+{% block maincontent %}
+
+  <div class="mfp-hide" id="tastestudies-slideshow">
+    {{ macros.slide('Taste piece featuring ...', src='acquire/taste/1.jpg', copy='') }}
+    {{ macros.slide('Taste piece featuring ...', src='acquire/taste/1.jpg', copy='') }}
+    {{ macros.slide('Taste piece featuring ...', src='acquire/taste/1.jpg', copy='') }}
+    {{ macros.slide('Taste piece featuring ...', src='acquire/taste/1.jpg', copy='') }}
+  </div>
+
+
+  <div class="row">
+    <div class="small-12 columns">
+
+      <h2>Exhibitions</h2>
+
+      <p>Matthew has exhibited his work in several galleries around the UK. If you are interested, please {{ macros.email() }} or telephone on 07835 122531.</p>
+
+    </div>
+  </div>
+{% endblock %}
+
+

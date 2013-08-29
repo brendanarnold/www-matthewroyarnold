@@ -8,23 +8,7 @@ Work exhibition by MATTHEW ROY ARNOLD
 {% endblock %}
 
 {% block header %}
-  <div class="row">
-    <div class="small-6 large-3 columns">
-      <a href="../">
-        <img id="logo" src="{{ root_path }}img/home_title.png" alt="Matthew Roy Arnold" />
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="small-12 columns">
-      <h1>Work</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="small-12 columns">
-      <div class="page-type-header">Exhibition</div>
-    </div>
-  </div>
+{{ macros.standard_header("Work", "Exhibition", root_path) }}
 {% endblock %}
 
 {% block navigation %}
@@ -34,7 +18,7 @@ Work exhibition by MATTHEW ROY ARNOLD
   <div class="row">
     <div class="small-12 columns">
 
-      <p><span class="article-date">Date here</span> &ndash; <span class="article-location">BV Studios, Philips Road, Bristol</span></p>
+      <div class="article-meta-container"><span class="article-date">13-15 May 2011</span> &ndash; <span class="article-location">BV Studios, Philips Road, Bristol</span></div>
 
       <p>Ownership, credit and modern art practice are all under the spotlight in this joint exhibition between Matthew Roy Arnold and Liam Rush. A series of pieces titled `Self portraits 1 through 6' line one wall. They each show a Chinese national painted in a typical portrait pose in style which are clearly idiosyncratic to the fabricator, however each is signed by `Matthew Roy Arnold'. The message is apparently clear &ndash; who fabricates the work matters, contrary to what many current large-scale artist will have you believe.</p>
 

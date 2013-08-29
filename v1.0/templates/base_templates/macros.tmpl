@@ -1,3 +1,43 @@
+
+{% macro captioned_img(src, url, title, caption='', is_slideshow=False) %}
+      <div class="nav">
+        <a href="{{ url }}" {% if is_slideshow %}class="slideshow-link"{% endif %}>
+          <span>{{ title }}</span>
+          <img src="{{ src }}" alt="{{ title }}" />
+        </a>
+      </div>
+      {% if caption %}
+      <p class="nav-caption">{{ caption }}</p>
+      {% endif %}
+{% endmacro %}
+
+
+
+
+{% macro standard_header(title='', type='', root_path='') %}
+  <div class="row">
+    <div class="small-12 columns">
+      <a href="{{ root_path }}">
+        <img id="logo" src="{{ root_path }}img/home_title.png" alt="Matthew Roy Arnold" />
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <h1>{{ title }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="page-type-header">{{ type }}</div>
+    </div>
+  </div>
+{% endmacro %}
+
+
+{% macro email() %}<a href="mailto:matthewroyarnold@gmail.com">matthewroyarnold@gmail.com</a>{% endmacro %}
+
+
 {% macro slide(title, src='', copy='', date='', media='') %}
 <div class="slide">
   {% if src %}
