@@ -1,9 +1,9 @@
 
-{% macro captioned_img(src, url, title, caption='', is_slideshow=False) %}
+{% macro captioned_img(src, url, title, caption='', is_slideshow=False, w="467", h="238" ) %}
       <div class="nav">
         <a href="{{ url }}" {% if is_slideshow %}class="slideshow-link"{% endif %}>
           <span>{{ title }}</span>
-          <img src="{{ src }}" alt="{{ title }}" />
+          <img src="{{ src }}" width="{{ w }}" height="{{ h }}" alt="{{ title }}" />
         </a>
       </div>
       {% if caption %}
