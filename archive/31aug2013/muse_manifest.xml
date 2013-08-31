@@ -1,0 +1,70 @@
+<manifest alg="1">
+  <folder name="image">
+    <file name="28 nov 2011.jpg" crc="216647088"/>
+    <file name="dsc04213.jpg" crc="150676084"/>
+    <file name="dsc04214.jpg" crc="3781072551"/>
+    <file name="fsg.jpg" crc="45829207"/>
+    <file name="loading.gif" crc="3815509949"/>
+    <file name="e.c para1.jpg" crc="3914706575"/>
+    <file name="e.c para2.jpg" crc="223266080"/>
+    <file name="e.c plane wing.jpg" crc="303033252"/>
+    <file name="e.c planes.jpg" crc="348674015"/>
+    <file name="e.c school.jpg" crc="4263539612"/>
+    <file name="e.c science.jpg" crc="391594602"/>
+    <file name="a.s.f.s.web copy.jpg" crc="171815925"/>
+    <file name="dsc00666.jpg" crc="4126408988"/>
+    <file name="dsc00646.jpg" crc="4228542286"/>
+    <file name="untitled-1.jpg" crc="20799175"/>
+    <file name="exhibition-plinth-400mm-x-400mm-x-1000mm.jpg" crc="4049757380"/>
+    <file name="1.jpg" crc="265070922"/>
+    <file name="2.jpg" crc="4012541801"/>
+    <file name="3.jpg" crc="297412662"/>
+    <file name="4.jpg" crc="318820106"/>
+    <file name="5.jpg" crc="4023811944"/>
+    <file name="untitled.jpg" crc="4036909669"/>
+    <file name="dsc03914.jpg" crc="3968863771"/>
+    <file name="table top.jpg" crc="4153845021"/>
+    <file name="teble over.jpg" crc="3978155857"/>
+    <file name="table 2.jpg" crc="23718134"/>
+    <file name="dscf0215.jpg" crc="120528933"/>
+  </folder>
+  <folder name="scripts">
+    <folder name="1.1">
+      <file name="jquery-1.7.min.js" crc="4285342938"/>
+      <file name="sprydomutils.js" crc="54905613"/>
+      <file name="museutils.js" crc="3989269793"/>
+      <file name="pie.js" crc="4169505556"/>
+      <file name="musesprycommon.js" crc="88636350"/>
+      <file name="musesprypanels.js" crc="462528396"/>
+      <file name="musespryslideshow.js" crc="38652771"/>
+      <file name="jquery.museoverlay.js" crc="3823423450"/>
+    </folder>
+  </folder>
+  <folder name="css">
+    <file name="index.css" crc="303831022"/>
+    <file name="studies.css" crc="511977611"/>
+    <file name="newsexhibitonsevents.css" crc="269911004"/>
+    <file name="excuse.css" crc="3962066"/>
+    <file name="early-crimson.css" crc="3940847181"/>
+    <file name="work.css" crc="4049111073"/>
+    <file name="contact-and-about.css" crc="4088763983"/>
+    <file name="(art-space-for-sale).css" crc="4178378302"/>
+    <file name="discs.css" crc="84595018"/>
+    <file name="art-idea-for-sale.css" crc="382671305"/>
+    <file name="self-portraites.css" crc="3812443353"/>
+    <file name="sistine-table.css" crc="345605373"/>
+    <file name="site_global.css" crc="4166738258"/>
+  </folder>
+  <file name="index.html" crc="4034198877"/>
+  <file name="studies.html" crc="4196868823"/>
+  <file name="newsexhibitonsevents.html" crc="315267107"/>
+  <file name="excuse.html" crc="497035844"/>
+  <file name="early-crimson.html" crc="4233424418"/>
+  <file name="work.html" crc="128293920"/>
+  <file name="contact-and-about.html" crc="64334760"/>
+  <file name="(art-space-for-sale).html" crc="4168626045"/>
+  <file name="discs.html" crc="3847340857"/>
+  <file name="art-idea-for-sale.html" crc="3978037875"/>
+  <file name="self-portraites.html" crc="3834006393"/>
+  <file name="sistine-table.html" crc="306039523"/>
+</manifest>

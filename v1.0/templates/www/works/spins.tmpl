@@ -28,7 +28,7 @@ Spin studies by MATTHEW ROY ARNOLD
         <li><a href="#tastestudies">Taste Studies</a></li>
       </ul>
 
-      <p>For information on obtaining a spin study piece, see <a href="{{ root_path }}acquire.html">acquiring works</a>.</p>
+      <p>For information on obtaining a spin study piece, see <a href="{{ root_path }}acquire/index.html">acquiring works</a>.</p>
 
     </div>
   </div>
@@ -46,14 +46,45 @@ Spin studies by MATTHEW ROY ARNOLD
     {{ macros.slide('Early Crimson 3', root_path + 'img/earlycrimson/3.jpg', '', '2011', 'Oil on print') }}
     {{ macros.slide('Early Crimson 4', root_path + 'img/earlycrimson/4.jpg', '', '2011', 'Oil on print') }}
     {{ macros.slide('Early Crimson 5', root_path + 'img/earlycrimson/5.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Early Crimson 6', root_path + 'img/earlycrimson/6.jpg', '', '2011', 'Oil on print') }}
   </div>
 
   <div class="mfp-hide" id="excuse-slideshow">
     {{ macros.slide('Excuse 1', root_path + 'img/excuse/1.jpg', '', '2011', 'Oil on print') }}
-    {{ macros.slide('Excuse 2', root_path + 'img/excuse/2.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Excuse 2', root_path + 'img/excuse/2.jpg', '', '2011', 'Oil on print', width='narrow') }}
     {{ macros.slide('Excuse 3', root_path + 'img/excuse/3.jpg', '', '2011', 'Oil on print') }}
     {{ macros.slide('Excuse 4', root_path + 'img/excuse/4.jpg', '', '2011', 'Oil on print') }}
-    {{ macros.slide('Excuse 5', root_path + 'img/excuse/5.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Excuse 5', root_path + 'img/excuse/5.jpg', '', '2011', 'Oil on print', width='narrow') }}
+    {{ macros.slide('Excuse 6', root_path + 'img/excuse/6.jpg', '', '2011', 'Oil on print') }}
+    {{ macros.slide('Excuse 6 Framed', root_path + 'img/excuse/7.jpg', '', '2011', 'Oil on print') }}
+  </div>
+
+  <div class="mfp-hide" id="onsecondglance-slideshow">
+    {{ macros.slide('On Second Glance 1', root_path + 'img/onsecondglance/1.jpg', '', '2012', 'Oil on print') }}
+    {{ macros.slide('On Second Glance 2', root_path + 'img/onsecondglance/2.jpg', '', '2012', 'Oil on print', width='narrow') }}
+    {{ macros.slide('On Second Glance 3', root_path + 'img/onsecondglance/3.jpg', '', '2012', 'Oil on print', width='narrow') }}
+    {{ macros.slide('On Second Glance 4', root_path + 'img/onsecondglance/4.jpg', '', '2012', 'Oil on print', width='narrow') }}
+    {{ macros.slide('On Second Glance 5', root_path + 'img/onsecondglance/5.jpg', '', '2012', 'Oil on print', width='narrow') }}
+    {{ macros.slide('On Second Glance 6', root_path + 'img/onsecondglance/6.jpg', '', '2012', 'Oil on print') }}
+    {{ macros.slide('On Second Glance 7', root_path + 'img/onsecondglance/7.jpg', '', '2012', 'Oil on print') }}
+    {{ macros.slide('On Second Glance 8', root_path + 'img/onsecondglance/8.jpg', '', '2012', 'Oil on print', width='narrow') }}
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      {{ macros.captioned_img(src=root_path + "img/spins_excuse_btn.jpg",
+          url="#excuse-slideshow",
+          title="Excuse",
+          is_slideshow=True,
+          caption="Spins overlaid on PlayBoy pin-ups.") }}
+    </div>
+    <div class="small-12 large-6 columns">
+      {{ macros.captioned_img(src=root_path + "img/spins_onsecondglance_btn.jpg",
+          url="#onsecondglance-slideshow",
+          title="On Second Glance",
+          is_slideshow=True,
+          caption="Spins overlaid on 6&times;4&quot; images from the past.") }}
+    </div>
   </div>
 
   <div class="row">
@@ -63,13 +94,6 @@ Spin studies by MATTHEW ROY ARNOLD
           title="Early Crimson", 
           is_slideshow=True, 
           caption="Commissioned spins overlaid on a selection of images chosen by the patron.") }}
-    </div>
-    <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/spins_excuse_btn.jpg",
-          url="#excuse-slideshow",
-          title="Excuse",
-          is_slideshow=True,
-          caption="Spins overlaid on PlayBoy pin-ups.") }}
     </div>
   </div>
 
@@ -84,8 +108,6 @@ Spin studies by MATTHEW ROY ARNOLD
     {{ macros.slide('UWE Installation', root_path + 'img/uweinstallation/1.jpg', '', '2011', 'Oil on glass') }}
     {{ macros.slide('UWE Installation', root_path + 'img/uweinstallation/2.jpg', '', '2011', 'Oil on glass') }}
     {{ macros.slide('UWE Installation', root_path + 'img/uweinstallation/3.jpg', '', '2011', 'Oil on glass') }}
-    {{ macros.slide('UWE Installation', root_path + 'img/uweinstallation/4.jpg', '', '2011', 'Oil on glass') }}
-    {{ macros.slide('UWE Installation', root_path + 'img/uweinstallation/5.jpg', '', '2011', 'Oil on glass') }}
   </div>
   
   <div class="row">
@@ -107,11 +129,15 @@ Spin studies by MATTHEW ROY ARNOLD
   </div>
 
   <div class="mfp-hide" id="exampletaste-slideshow">
-    {{ macros.slide('Red on blue', root_path + 'img/exampletaste/1.jpg', '', '2011', 'Oil on glass') }}
-    {{ macros.slide('Red on blue', root_path + 'img/exampletaste/2.jpg', '', '2011', 'Oil on glass') }}
-    {{ macros.slide('Red on blue', root_path + 'img/exampletaste/3.jpg', '', '2011', 'Oil on glass') }}
-    {{ macros.slide('Red on blue', root_path + 'img/exampletaste/4.jpg', '', '2011', 'Oil on glass') }}
-    {{ macros.slide('Red on blue', root_path + 'img/exampletaste/5.jpg', '', '2011', 'Oil on glass') }}
+    {{ macros.slide('Untitled', root_path + 'img/exampletaste/1.jpg', '', '2013', 'Oil on glass') }}
+    {{ macros.slide('Untitled', root_path + 'img/exampletaste/2.jpg', '', '2013', 'Oil on glass', width='narrow') }}
+    {{ macros.slide('Untitled', root_path + 'img/exampletaste/3.jpg', '', '2013', 'Oil on glass') }}
+    {{ macros.slide('Untitled', root_path + 'img/exampletaste/4.jpg', '', '2013', 'Oil on glass', width='narrow') }}
+    {{ macros.slide('Untitled', root_path + 'img/exampletaste/5.jpg', '', '2013', 'Oil on glass') }}
+    {{ macros.slide('Untitled', root_path + 'img/exampletaste/6.jpg', '', '2013', 'Oil on glass') }}
+    {{ macros.slide('Untitled', root_path + 'img/exampletaste/7.jpg', '', '2013', 'Oil on glass') }}
+    {{ macros.slide('Untitled', root_path + 'img/exampletaste/8.jpg', '', '2013', 'Oil on glass', width='narrow') }}
+    {{ macros.slide('Untitled', root_path + 'img/exampletaste/9.jpg', '', '2013', 'Oil on glass') }}
   </div>
 
   <div class="row">
@@ -119,6 +145,7 @@ Spin studies by MATTHEW ROY ARNOLD
       {{ macros.captioned_img(src=root_path+"img/spins_tastestudies_btn.jpg",
           url="#exampletaste-slideshow",
           title="Example Taste Study pieces",
+          is_slideshow=True,
           caption="Example Taste Study pieces") }}
     </div>
   </div>

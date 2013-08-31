@@ -24,7 +24,7 @@ Exhibitions by MATTHEW ROY ARNOLD
   </style>
 
 </head>
-<body>
+<body >
 
 	<div class="row">
     
@@ -38,12 +38,12 @@ Exhibitions by MATTHEW ROY ARNOLD
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <h1>Exhibitions</h2>
+      <h1 >Exhibitions</h1>
     </div>
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <div class="page-type-header">Index</div>
+      <div class="page-type-header" >Index</div>
     </div>
   </div>
 
@@ -73,13 +73,13 @@ Exhibitions by MATTHEW ROY ARNOLD
       <div class="small-12 large-6 columns">
       
       <div class="nav">
-        <a href="../exhibitions/spaceforsale.html" >
+        <a href="../exhibitions/artspaceforsale.html" >
           <span>Art Space for Sale</span>
           <img src="../img/exhibitions_artspaceforsale_btn.jpg" alt="Art Space for Sale" />
         </a>
       </div>
       
-      <p class="nav-caption">An exhibtion of the works in the <a href="../works/index.html#spaceforsale">Art Space for Sale</a> series. Took place in a pop-up-gallery in a commercial premises.</p>
+      <p class="nav-caption">An exhibtion of the works in the <a href="../works/index.html#artspaceforsale">Art Space for Sale</a> series. Took place in a pop-up-gallery in a commercial premises.</p>
       
 
       </div>
@@ -121,6 +121,10 @@ Exhibitions by MATTHEW ROY ARNOLD
           enabled: true
         }
       });
+      // Put this in here to prevent littering the history with URL
+      // fragments
+      // window.history.back(1);
+      return false;
     });
   </script>
 
@@ -158,6 +162,15 @@ Exhibitions by MATTHEW ROY ARNOLD
   
   <script>
     $(document).foundation();
+  </script>
+  <!-- Some Google Analytics stuff -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-43676213-1', 'matthewroyarnold.co.uk');
+    ga('send', 'pageview');
   </script>
 </body>
 </html>

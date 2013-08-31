@@ -24,7 +24,7 @@ About MATTHEW ROY ARNOLD
   </style>
 
 </head>
-<body>
+<body >
 
 	<div class="row">
     
@@ -38,12 +38,12 @@ About MATTHEW ROY ARNOLD
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <h1>About</h2>
+      <h1 >About</h1>
     </div>
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <div class="page-type-header">index</div>
+      <div class="page-type-header" >index</div>
     </div>
   </div>
 
@@ -57,9 +57,20 @@ About MATTHEW ROY ARNOLD
 
 
   <div class="row">
-    <div class="small-12 columns">
+    <div class="small-12 columns" itemscope itemtype="http://www.schema.org/Person">
+  
+      <meta itemprop="name" content="Matthew Roy Arnold" />
+      <meta itemprop="jobTitle" content="Fine Artist, TV and Film Prop Maker" />
 
       <h2>Biography</h2>
+
+      <div class="clear"></div>
+
+      
+      <div class="figure-right">
+        <img itemprop="image" src="./img/about/1.jpg" alt="Matthew in his studio" />
+        <p class="figure-caption">Artist in studio</p>
+      </div>
 
       <p>Matthew was born and raised in Cleethorpes, UK and moved to Bristol in 2003 to study Fine Art at U.W.E. After graduating he worked in television as a prop maker to support his practice before becoming a full-time artist in 2011.</p>
 
@@ -71,9 +82,16 @@ About MATTHEW ROY ARNOLD
 
       <p>Matthew works from BV Studios in Bristol.</p>
 
-      <address>Room G2<br />BV Studios<br />37 Philip St.<br />Bedminster<br />Bristol<br />BS3 4EA</address>
+      <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        Room G2<br />
+        <span itemprop="name">BV Studios</span><br />
+        <span itemprop="streetAddress">37 Philip St.</span><br />
+        <span itemprop="addressLocality">Bedminster</span><br />
+        <span itemprop="addressRegion">Bristol</span><br />
+        <span itemprop="postalCode">BS3 4EA</span>
+      </address>
 
-      <p>Email: <a href="mailto:matthewroyarnold@gmail.com">matthewroyarnold@gmail.com</a></p>
+      <p>Email: <a href="mailto:matthewroyarnold@gmail.com" itemprop="email">matthewroyarnold@gmail.com</a></p>
 
       <p>Facebook: <a href="http://www.facebook.com/MatthewRoyArnold">/MatthewRoyArnold</a></p>
 
@@ -114,6 +132,10 @@ About MATTHEW ROY ARNOLD
           enabled: true
         }
       });
+      // Put this in here to prevent littering the history with URL
+      // fragments
+      // window.history.back(1);
+      return false;
     });
   </script>
 
@@ -151,6 +173,15 @@ About MATTHEW ROY ARNOLD
   
   <script>
     $(document).foundation();
+  </script>
+  <!-- Some Google Analytics stuff -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-43676213-1', 'matthewroyarnold.co.uk');
+    ga('send', 'pageview');
   </script>
 </body>
 </html>

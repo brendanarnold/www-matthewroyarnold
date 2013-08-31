@@ -1,0 +1,118 @@
+html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 1156px;
+	min-height: 512.75px;
+	border-style: none;
+	background-color: #FFFFFF;
+	margin: 10px auto;
+	padding: 75px 24px 12.25px 21px;
+}
+
+#pu2028-8
+{
+	width: 0.01px;
+	margin-left: 26px;
+	position: relative;
+}
+
+#u2028-8
+{
+	z-index: 8;
+	width: 317px;
+	min-height: 212px;
+	position: relative;
+	margin-right: -317px;
+}
+
+#u2028-2, #u2028-3
+{
+	font-weight: bold;
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+}
+
+#u2028-4
+{
+	font-weight: normal;
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+}
+
+#u2030-15
+{
+	z-index: 28;
+	width: 317px;
+	min-height: 212px;
+	font-weight: bold;
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+	position: relative;
+	margin-right: -317px;
+	left: 327px;
+}
+
+#u2030-5, #u2030-8, #u2030-11
+{
+	color: #000000;
+}
+
+#u2029-12
+{
+	z-index: 16;
+	width: 476px;
+	min-height: 212px;
+	position: relative;
+	margin-right: -476px;
+	left: 654px;
+}
+
+#u2028-6, #u2029-2
+{
+	font-weight: bold;
+}
+
+#u2029-6
+{
+	color: #000000;
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+}
+
+#u2028-5, #u2030-4, #u2030-7, #u2030-10, #u2029-3, #u2029-7, #u2029-10
+{
+	font-weight: normal;
+}
+
+#u2029-4, #u2029-8
+{
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+}
+
+#u2029-5, #u2029-9
+{
+	font-weight: bold;
+	color: #000000;
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+}
+
+#master-footer
+{
+	width: 0.01px;
+	margin-top: 283px;
+	position: relative;
+}
+
+#u2817-4
+{
+	z-index: 3;
+	width: 60px;
+	min-height: 18px;
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+	font-weight: bold;
+	color: #A81010;
+	position: relative;
+	margin-right: -60px;
+}
+

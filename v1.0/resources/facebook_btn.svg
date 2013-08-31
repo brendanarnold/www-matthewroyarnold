@@ -26,16 +26,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="148.57085"
+     inkscape:cx="-22.143436"
      inkscape:cy="574.85755"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="917"
-     inkscape:window-height="651"
-     inkscape:window-x="49"
-     inkscape:window-y="58"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -60,7 +60,8 @@
        height="270"
        width="267"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\text3015.png" />
     <image
        y="218.71935"
        x="113.07142"
@@ -75,26 +76,28 @@
        sodipodi:linespacing="125%"
        id="text3011"
        y="477.81421"
-       x="232.31676"
+       x="224.7614"
        style="font-size:20.75917625px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.7;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
        xml:space="preserve"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          style="font-size:234.26348877px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial Bold"
          y="477.81421"
-         x="232.31676"
+         x="224.7614"
          id="tspan3013"
          sodipodi:role="line">f</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3015"
        y="480.67136"
-       x="-443.39752"
+       x="-446.66721"
        style="font-size:20.75917625px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.7;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica"
-       xml:space="preserve"><tspan
+       xml:space="preserve"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          style="font-size:234.26348877px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial Bold"
          y="480.67136"
-         x="-443.39752"
+         x="-446.66721"
          id="tspan3017"
          sodipodi:role="line">f</tspan></text>
   </g>

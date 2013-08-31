@@ -76,30 +76,42 @@ div.nav {
 }
 
 
-.slide {
+@mixin slide($width) {
   position: relative;
   background: #FFFFFF;
-  padding: 5px;
-  padding-top: $gutter_large;
-  width: auto;
-  max-width: 1000px;
+  padding: $gutter_large $gutter_normal $gutter_normal $gutter_normal;
+  max-width: 100%;
+  width: $width;
   margin: $gutter_normal auto;
   .slide-img-container {
+    img {
+      width: 100%;
+    }
+    text-align: center;
   }
   .slide-placard {
     .slide-placard-title {
-      font-weight: 400;
+      text-transform: uppercase;
       margin-bottom: 0px;
+      float: left;
     }
     .slide-placard-subtitle {
-      font-size: 90%;
+      text-align: right;
+      margin-bottom: 0px;
     }
     .slide-placard-media {
-      font-style: italic;
     }
     .slide-placard-date {
     }
   }
+}
+
+.slide-normal {
+  @include slide(1000px);
+}
+
+.slide-narrow {
+  @include slide(600px);
 }
 
 // Override weird Foundation defaults
@@ -139,7 +151,7 @@ ul, ol {
   font-size: 19px;
   font-family: Roboto, sans-serif;
   font-weight: 300;
-  margin-bottom: $newsectionspacer;
+  margin-bottom: $gutter_large;
 }
 
 address {
@@ -151,4 +163,52 @@ address {
 
 li {
   @extend p;
+}
+
+@mixin float-left($margin) {
+  margin-right: $margin;
+  float: left;
+}
+
+@mixin float-right($margin) {
+  margin-left: $margin;
+  margin-right: $gutter_small;
+  float: right;
+}
+
+@mixin figure {
+  padding: $gutter_small;
+  border: $border_width solid black;
+  img {
+    max-width: 100%;
+  }
+  .figure-caption {
+    margin-bottom: 0px;
+  }
+}
+
+.figure-left {
+  @include figure;
+  @include float-left($gutter_small);
+}
+
+.figure-right {
+  @include figure;
+  @include float-right($gutter_small);
+}
+
+.block {
+  margin-bottom: $gutter_normal;
+}
+
+div.clear {
+  clear: both;
+}
+
+.slideshow-launcher {
+  @extend p;
+  border: $border_width solid black;
+  padding: 5px;
+  display: inline-block;
+  margin-bottom: $gutter_normal;
 }

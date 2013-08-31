@@ -1,0 +1,79 @@
+html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 356px;
+	min-height: 556.75px;
+	border-style: none;
+	background-color: #FFFFFF;
+	margin: 10px auto;
+	padding: 31px 824px 12.25px 21px;
+}
+
+#pu2026-19
+{
+	width: 0.01px;
+	margin-left: 8px;
+	position: relative;
+}
+
+#u2026-19
+{
+	z-index: 8;
+	width: 348px;
+	min-height: 229px;
+	position: relative;
+	margin-right: -348px;
+}
+
+#u2026-2
+{
+	font-weight: bold;
+}
+
+#u2026-3
+{
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#u2026-7
+{
+	color: #A81010;
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+}
+
+#u2026, #u2026-4, #u2026-6, #u2026-10
+{
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+}
+
+#u2026-12, #u2026-13, #u2026-15
+{
+	font-size: 12px;
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+}
+
+#master-footer
+{
+	width: 0.01px;
+	margin-top: 293px;
+	position: relative;
+}
+
+#u2817-4
+{
+	z-index: 3;
+	width: 60px;
+	min-height: 18px;
+	font-family: Consolas, Lucida Console, Monaco, monospace;
+	font-weight: bold;
+	color: #A81010;
+	position: relative;
+	margin-right: -60px;
+}
+

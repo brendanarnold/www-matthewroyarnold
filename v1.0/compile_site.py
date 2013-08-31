@@ -1,8 +1,12 @@
 import os
+import shutil
 import distutils.dir_util
 from jinja2 import Template, FileSystemLoader, Environment
 from scss import Scss
 
+# Build variables
+
+DEBUG = True
 TEMPLATES_DIR = "templates"
 SITE_DIR = "templates\\www"
 STATIC_DIR = "static"
@@ -14,6 +18,8 @@ BASE_TEMPLATE_FN = "base_templates/desktop_web.tmpl"
 CSS_TEMPLATE_EXT = ".scss"
 HTML_TEMPLATE_EXT = ".tmpl"
 
+# Site variables
+EMAIL = 'matthewroyarnold@gmail.com'
 
 env = Environment(loader = FileSystemLoader(TEMPLATES_DIR))
 
@@ -37,7 +43,9 @@ for (path, dirs, fns) in os.walk(SITE_DIR):
           root_path += '../'
         if not root_path:
             root_path = './'
-        src = t.render(base_template = BASE_TEMPLATE_FN, root_path = root_path)
+        src = t.render(base_template = BASE_TEMPLATE_FN, 
+            root_path = root_path,
+            email = EMAIL)
         # Create build directory if it does not already exist
         bdirn = os.path.join(BUILD_DIR, path[len(SITE_DIR)+1:])
         if not os.path.isdir(bdirn):

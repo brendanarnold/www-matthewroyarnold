@@ -16,40 +16,92 @@ Works by MATTHEW ROY ARNOLD
 
 {% block maincontent %}
 
+  <div class="mfp-hide" id="artspaceforsale-slideshow">
+    {{ macros.slide('DeWalt', root_path + 'img/artspaceforsale/1.jpg', '', '2010', 'Bronze cast', width='narrow') }}
+    {{ macros.slide('Placeholder canvas', root_path + 'img/artspaceforsale/2.jpg', '', '2010', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Winsor &amp; Newton', root_path + 'img/artspaceforsale/3.jpg', '', '2010', 'Oil on cavas') }}
+    {{ macros.slide('Milk Stout', root_path + 'img/artspaceforsale/4.jpg', '', '2010', 'Oil on cavas') }}
+    {{ macros.slide('Sunrise', root_path + 'img/artspaceforsale/5.jpg', '', '2010', 'Oil on cavas') }}
+    {{ macros.slide('No. 7', root_path + 'img/artspaceforsale/6.jpg', '', '2010', 'Oil on cavas') }}
+    {{ macros.slide('Magna', root_path + 'img/artspaceforsale/7.jpg', '', '2010', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Bristol Drawing School', root_path + 'img/artspaceforsale/8.jpg', '', '2010', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Bristol Ferries', root_path + 'img/artspaceforsale/9.jpg', '', '2010', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Bristol Fine Art', root_path + 'img/artspaceforsale/10.jpg', '', '2010', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Crack Magazine', root_path + 'img/artspaceforsale/11.jpg', '', '2010', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Cadburys', root_path + 'img/artspaceforsale/12.jpg', '', '2010', 'Oil on cavas') }}
+    {{ macros.slide('Watershed', root_path + 'img/artspaceforsale/13.jpg', '', '2006', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Bristol Fine Art', root_path + 'img/artspaceforsale/14.jpg', '', '2006', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Tantric Jazz Bar', root_path + 'img/artspaceforsale/15.jpg', '', '2006', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Bristol Old Vic', root_path + 'img/artspaceforsale/16.jpg', '', '2006', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Hippodrome', root_path + 'img/artspaceforsale/17.jpg', '', '2006', 'Oil on cavas', width='narrow') }}
+  </div>
+
   <div class="row">
     <div class="small-12 large-6 columns">
       {{ macros.captioned_img(src=root_path + "img/works_spinstudies_btn.jpg",
             url=root_path + "works/spins.html",
             title="Spin Studies",
-            caption='The spin studies comprise of the <a href="' + root_path + 'works/imagereactionstudies.html">Image Reaction Studies</a>, the <a href="' + root_path + 'works/placereactionstudies.html">Place Reaction Studies</a> and the <a href="' + root_path + 'works/tastestudies.html">Taste Studies</a> each of which expand on the leitmotif of a simple geometric spin pattern.') }}
+            caption='The spin studies comprise of the Image Reaction Studies, the Place Reaction Studies and the Taste Studies each of which expand on the leitmotif of a simple geometric spin pattern.') }}
     </div>
     <div class="small-12 large-6 columns">    
       {{ macros.captioned_img(src=root_path + 'img/works_spaceforsale_btn.jpg',
-            url=root_path + 'exhibitions/spaceforsale.html',
+            url='#artspaceforsale-slideshow',
             title="Art Space for Sale",
-            caption="A write up of the Art Space for Sale event which explored the conflict of commerca and artistic integrety in art.") }}
+            is_slideshow=True,
+            caption='Art Space for Sale event explors the conflict of commerce and artistic integrety in art. Read more in the <a href="%sexhibitions/artspaceforsale.html">exhibition write up</a>.' % root_path) }}
     </div>
+  </div>
+
+  <div class="mfp-hide" id="selfportraits-slideshow">
+    {{ macros.slide('Self Portrait and fabricator 1', root_path + 'img/outsourcedselfportraits/1.jpg', '', '2011', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Self Portrait and fabricator 2', root_path + 'img/outsourcedselfportraits/2.jpg', '', '2011', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Self Portrait and fabricator 3', root_path + 'img/outsourcedselfportraits/3.jpg', '', '2011', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Self Portrait and fabricator 4', root_path + 'img/outsourcedselfportraits/4.jpg', '', '2011', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Self Portrait and fabricator 5', root_path + 'img/outsourcedselfportraits/5.jpg', '', '2011', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Self Portrait and fabricator 6', root_path + 'img/outsourcedselfportraits/6.jpg', '', '2011', 'Oil on cavas', width='narrow') }}
+  </div>
+
+  <div class="mfp-hide" id="artideasforsale-slideshow">
+    {{ macros.slide('Art ideas for Sale 1', root_path + 'img/artideasforsale/1.jpg', '<p>Various ideas presented at the Work Exhibition</p>', '2011', 'Manilla paper') }}
+    {{ macros.slide('Art ideas for Sale 2', root_path + 'img/artideasforsale/2.jpg', '<p>Various ideas presented at the Work Exhibition</p>', '2011', 'Manilla paper') }}
+    {{ macros.slide('Art ideas for Sale 3', root_path + 'img/artideasforsale/3.jpg', '<p>Various ideas presented at the Work Exhibition</p>', '2011', 'Manilla paper') }}
+    {{ macros.slide('Art ideas for Sale', root_path + 'img/artideasforsale/4.jpg', '<p>Various ideas presented at the Work Exhibition</p>', '2011', 'Manilla paper') }}
   </div>
 
   <div class="row">
     <div class="small-12 large-6 columns">
       {{ macros.captioned_img(src=root_path + 'img/works_selfportraits_btn.jpg',
-            url=root_path + 'exhibitions/work.html',
+            url='#selfportraits-slideshow',
             title="Outsourced Self Portraits",
-            caption="Many artists no longer fabricate their own works, with the emphasis in these cases ostensibly being on the concept. Exhibited in the `Work' show, these works explore how the nature of the work may be affected by outsourcing practices." ) }}
+            is_slideshow=True,
+            caption='Many artists no longer fabricate their own works, with the emphasis in these cases ostensibly being on the concept. Exhibited in the <a href="%sexhibitions/work.html">Work show</a>, these works explore how the nature of the work may be affected by outsourcing practices.' % root_path ) }}
     </div>
 
     <div class="small-12 large-6 columns">
       {{ macros.captioned_img(src=root_path + 'img/works_ideasforsale_btn.jpg',
-            url=root_path + 'exhibitions/work.html',
+            url='#artideasforsale-slideshow',
             title='Art Ideas for Sale',
-            caption="Modern art practice is called into question when we consider through these works if concept too can be outsourced. Links to the write up of the `Work' event." ) }}
+            is_slideshow=True,
+            caption='Modern art practice is called into question when we consider through these works if concept too can be outsourced. Exhibited in the <a href="%sexhibitions/work.html">Work show</a>.' % root_path ) }}
     </div>
   </div>
 
   <div class="mfp-hide" id="lostandstolen-slideshow">
-    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/1.jpg', date='2010 - ongoing', media='Oil on canvas',
+    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/1.jpg', date='2010 - ongoing', 
+      media='Oil on canvas',
       copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>") }}
+    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/2.jpg', date='2010 - ongoing', 
+      media='Oil on canvas',
+      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>",
+      width='narrow') }}
+    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/3.jpg', date='2010 - ongoing', 
+      media='Oil on canvas',
+      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>",
+      width="narrow") }}
+    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/4.jpg', date='2010 - ongoing', 
+      media='Oil on canvas',
+      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>",
+      width='narrow') }}
   </div>
 
 

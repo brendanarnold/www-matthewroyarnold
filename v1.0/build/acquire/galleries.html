@@ -24,7 +24,7 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
   </style>
 
 </head>
-<body>
+<body >
 
 	<div class="row">
     
@@ -38,12 +38,12 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <h1>Aquiring Work</h2>
+      <h1 >Aquiring Work</h1>
     </div>
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <div class="page-type-header">galleries</div>
+      <div class="page-type-header" >galleries</div>
     </div>
   </div>
 
@@ -57,7 +57,7 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
 
   <div class="mfp-hide" id="tastestudies-slideshow">
     
-<div class="slide">
+<div class="slide slide-normal">
   
   <div class="slide-img-container">
     <img src="acquire/taste/1.jpg" alt="Taste piece featuring ..." />
@@ -66,12 +66,13 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
   <div class="slide-placard">
     <p class="slide-placard-title">Taste piece featuring ...</p>
     
+    <div class="clear"></div>
     
   </div>
 </div>
 
     
-<div class="slide">
+<div class="slide slide-normal">
   
   <div class="slide-img-container">
     <img src="acquire/taste/1.jpg" alt="Taste piece featuring ..." />
@@ -80,12 +81,13 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
   <div class="slide-placard">
     <p class="slide-placard-title">Taste piece featuring ...</p>
     
+    <div class="clear"></div>
     
   </div>
 </div>
 
     
-<div class="slide">
+<div class="slide slide-normal">
   
   <div class="slide-img-container">
     <img src="acquire/taste/1.jpg" alt="Taste piece featuring ..." />
@@ -94,12 +96,13 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
   <div class="slide-placard">
     <p class="slide-placard-title">Taste piece featuring ...</p>
     
+    <div class="clear"></div>
     
   </div>
 </div>
 
     
-<div class="slide">
+<div class="slide slide-normal">
   
   <div class="slide-img-container">
     <img src="acquire/taste/1.jpg" alt="Taste piece featuring ..." />
@@ -108,6 +111,7 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
   <div class="slide-placard">
     <p class="slide-placard-title">Taste piece featuring ...</p>
     
+    <div class="clear"></div>
     
   </div>
 </div>
@@ -120,7 +124,14 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
 
       <h2>Exhibitions</h2>
 
-      <p>Matthew has exhibited his work in several galleries around the UK. If you are interested, please <a href="mailto:matthewroyarnold@gmail.com">matthewroyarnold@gmail.com</a> or telephone on 07835 122531.</p>
+      <div class="clear"></div>
+
+      <div class="figure-left">
+        <img src="../img/acquire/galleries/1.jpg" alt="Interaction study on show at the View gallery, Bristol" />
+        <p class="figure-caption">View Gallery, Bristol</p>
+      </div>
+
+      <p>Matthew has exhibited his work in several galleries around the UK. For references, please email <a href="mailto:matthewroyarnold@gmail.com">matthewroyarnold@gmail.com</a> or telephone on 07835 122531.</p>
 
     </div>
   </div>
@@ -159,6 +170,10 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
           enabled: true
         }
       });
+      // Put this in here to prevent littering the history with URL
+      // fragments
+      // window.history.back(1);
+      return false;
     });
   </script>
 
@@ -196,6 +211,15 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
   
   <script>
     $(document).foundation();
+  </script>
+  <!-- Some Google Analytics stuff -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-43676213-1', 'matthewroyarnold.co.uk');
+    ga('send', 'pageview');
   </script>
 </body>
 </html>

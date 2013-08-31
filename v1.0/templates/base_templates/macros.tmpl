@@ -14,7 +14,7 @@
 
 
 
-{% macro standard_header(title='', type='', root_path='') %}
+{% macro standard_header(title='', type='', root_path='', microdata_title='', microdata_subtitle='') %}
   <div class="row">
     <div class="small-12 columns">
       <a href="{{ root_path }}">
@@ -24,12 +24,12 @@
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <h1>{{ title }}</h2>
+      <h1 {% if microdata_title %}itemprop="{{ microdata_title }}"{% endif %}>{{ title }}</h1>
     </div>
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <div class="page-type-header">{{ type }}</div>
+      <div class="page-type-header" {%if microdata_subtitle %}itemprop="{{ microdata_subtitle }}"{% endif %}>{{ type }}</div>
     </div>
   </div>
 {% endmacro %}
@@ -38,8 +38,9 @@
 {% macro email() %}<a href="mailto:matthewroyarnold@gmail.com">matthewroyarnold@gmail.com</a>{% endmacro %}
 
 
-{% macro slide(title, src='', copy='', date='', media='') %}
-<div class="slide">
+
+{% macro slide(title, src='', copy='', date='', media='', width='normal') %}
+<div class="slide slide-{{ width }}">
   {% if src %}
   <div class="slide-img-container">
     <img src="{{ src }}" alt="{{ title }}" />
@@ -51,7 +52,10 @@
     {% if media %}<span class="slide-placard-media">{{ media }}</span>{% endif %}
     {% if date %}<span class="slide-placard-date">{{ date }}</span>{% endif %}
     {% endif %}
+    <div class="clear"></div>
     {% if copy %}{{ copy }}{% endif %}
   </div>
 </div>
 {% endmacro %}
+
+{% macro itemscope(t) %} itemscope itemtype="http://schema.org/{{ t }}"{% endmacro %}
