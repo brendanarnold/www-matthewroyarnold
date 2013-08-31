@@ -79,7 +79,7 @@ div.nav {
 @mixin slide($width) {
   position: relative;
   background: #FFFFFF;
-  padding: $gutter_large $gutter_normal $gutter_normal $gutter_normal;
+  padding: $gutter_large 1% $gutter_normal 1%;
   max-width: 100%;
   width: $width;
   margin: $gutter_normal auto;
