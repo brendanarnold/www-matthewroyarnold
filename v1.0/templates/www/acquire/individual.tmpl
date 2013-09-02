@@ -8,7 +8,7 @@ Acquiring work for individuals by MATTHEW ROY ARNOLD
 {% endblock %}
 
 {% block header %}
-  {{ macros.standard_header(title='Aquiring Work',
+  {{ macros.standard_header(title='Works for Individuals',
       type='individual') }}
 {% endblock %}
 
@@ -18,28 +18,38 @@ Acquiring work for individuals by MATTHEW ROY ARNOLD
 {% block maincontent %}
 
   <div class="mfp-hide" id="tastestudies-slideshow">
-    {{ macros.slide('Sizes', src=root_path + 'img/acquire/individual/taste/1.jpg', copy='<p>The Taste Studies come in three standard sizes, portrait or landscape. Other sizes are possible &ndash; contact for more details.</p>') }}
-    {{ macros.slide('Ready to hang', src=root_path + 'img/acquire/individual/taste/2.jpg', copy='<p>The pieces are ready to hang.</p>') }}
-    {{ macros.slide('Frames', src=root_path + 'img/acquire/individual/taste/3.jpg', copy='<p>More unusual frames are available</p>') }}
-    {{ macros.slide('Taste piece detail', src=root_path + 'img/acquire/individual/taste/4.jpg', copy='<p>Clean lines combine with painterly textures.</p>') }}
+    {% call macros.slide('Sizes', src=root_path + 'img/acquire/individual/taste/1.jpg') %}
+     <p>The Taste Studies come in three standard sizes, portrait or landscape. Other sizes are possible &ndash; contact for more details.</p>
+    {% endcall %}
+    {% call macros.slide('Ready to hang', src=root_path + 'img/acquire/individual/taste/2.jpg') %}
+        <p>The pieces are ready to hang.</p>
+    {% endcall %}
+    {% call macros.slide('Frames', src=root_path + 'img/acquire/individual/taste/3.jpg') %}
+        <p>More unusual frames are available</p>
+    {% endcall %}
+    {% call macros.slide('Taste piece detail', src=root_path + 'img/acquire/individual/taste/4.jpg') %}
+        <p>Clean lines combine with painterly textures.</p>
+    {% endcall %}
   </div>
 
   <div class="mfp-hide" id="imagereactionstudies-slideshow">
-    {{ macros.slide('Image reaction studies ...', src=root_path + 'img/acquire/individual/imagereactionstudies/1.jpg', copy='<p>Image Reaction Studies can take any image and accentuate with discs.</p>', width='narrow') }}
-    {{ macros.slide('Image reaction studies ...', src=root_path + 'img/acquire/individual/imagereactionstudies/2.jpg', copy='<p>Here the gicl&eacute;e print contrast with the rich oil paint textures.</p>') }}
-    {{ macros.slide('Image reaction studies ...', src=root_path + 'img/acquire/individual/imagereactionstudies/3.jpg', copy='<p>Images as landscape.</p>', width='narrow') }}
-    {{ macros.slide('Image reaction studies ...', src=root_path + 'img/acquire/individual/imagereactionstudies/4.jpg', copy='<p>As portrait</p>') }}
-    {{ macros.slide('Image reaction studies ...', src=root_path + 'img/acquire/individual/imagereactionstudies/5.jpg', copy='<p>A framed image.</p>') }}
+    {% call macros.slide('Image reaction studies ...', src=root_path + 'img/acquire/individual/imagereactionstudies/1.jpg', width='narrow') %}
+        <p>Image Reaction Studies can take any image and accentuate with discs.</p>
+    {% endcall %} 
+    {% call macros.slide('Image reaction studies ...', src=root_path + 'img/acquire/individual/imagereactionstudies/2.jpg') %}
+        <p>Here the gicl&eacute;e print contrast with the rich oil paint textures.</p>
+    {% endcall %} 
+    {% call macros.slide('Image reaction studies ...', src=root_path + 'img/acquire/individual/imagereactionstudies/3.jpg', width="narrow") %}
+        <p>Images as landscape.</p>
+    {% endcall %} 
+    {% call macros.slide('Image reaction studies ...', src=root_path + 'img/acquire/individual/imagereactionstudies/4.jpg') %}
+        <p>As portrait</p>
+    {% endcall %} 
+    {% call macros.slide('Image reaction studies ...', src=root_path + 'img/acquire/individual/imagereactionstudies/5.jpg') %}
+        <p>A framed image.</p>
+    {% endcall %} 
   </div>
 
-<!--
-  <div class="mfp-hide" id="placereactionstudies-slideshow">
-    {{ macros.slide('Place reaction studies ...', src=root_path + 'acquire/placereactionstudies/1.jpg', copy='') }}
-    {{ macros.slide('Place reaction studies ...', src=root_path + 'acquire/placereactionstudies/1.jpg', copy='') }}
-    {{ macros.slide('Place reaction studies ...', src=root_path + 'acquire/placereactionstudies/1.jpg', copy='') }}
-    {{ macros.slide('Place reaction studies ...', src=root_path + 'acquire/placereactionstudies/1.jpg', copy='') }}
-  </div>
--->
 
   <div class="row">
     <div class="small-12 columns">

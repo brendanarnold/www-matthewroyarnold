@@ -20,7 +20,8 @@ Misc. work by MATTHEW ROY ARNOLD
       <ul class="nodecoration">
         <li><a href="#thegoodshepherd">PCS10-The Good Shepherd</a></li>
         <li><a href="#sistinetable">Sistine Table</a></li>
-        <li><a href="#artistinsculpture">The Artist in Sculpture</a></li>
+        <li><a href="#materialsstudy">Materials Study</a></li>
+        <li><a href="#lostandstolen">Loast and Stolen</a></li>
       </ul>
     </div>
   </div>
@@ -33,7 +34,7 @@ Misc. work by MATTHEW ROY ARNOLD
   </div>
 
   <div class="mfp-hide" id="thegoodshepherd-slideshow">
-    {{ macros.slide('PCS10-The Good Shepherd', root_path + 'img/thegoodshepherd/1.jpg', '', '2009', 'Acrylic on printed canvas', width='narrow') }}
+    {{ macros.slide('PCS10-The Good Shepherd', root_path + 'img/thegoodshepherd/1.jpg', '2009', 'Acrylic on printed canvas', width='narrow') }}
   </div>
     
   <div class="row">
@@ -57,10 +58,10 @@ Misc. work by MATTHEW ROY ARNOLD
   </div>
 
   <div class="mfp-hide" id="sistinetable-slideshow">
-    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/1.jpg', '', '2007', 'Oil on table and projector') }}
-    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/2.jpg', '', '2007', 'Oil on table and projector') }}
-    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/3.jpg', '', '2007', 'Oil on table and projector') }}
-    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/4.jpg', '', '2007', 'Oil on table and projector') }}
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/1.jpg', '2007', 'Oil on table and projector') }}
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/2.jpg', '2007', 'Oil on table and projector') }}
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/3.jpg', '2007', 'Oil on table and projector') }}
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/4.jpg', '2007', 'Oil on table and projector') }}
   </div>
 
   <div class="row">
@@ -76,46 +77,45 @@ Misc. work by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 columns">
-      <h2 id="artistinsculpture">The Artist in Sculpture</h2>
-      <p>A series of works based on a sculpture of the artists own image.</p>
+      <h2 id="materialsstudy">Materials Study</h2>
+      <p>A work based on a sculpture of a bust of the artist incorporating plastic, sculpy, plaster, concrete and wood.</p>
     </div>
   </div>
 
-  <div class="mfp-hide" id="artistinsculpture-slideshow">
-    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/1.jpg', '<p>Piece can be adjusted to push faces in various directions.</p>', '2013', 'Perspex, latex, oil paints') }}
-    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/2.jpg', '<p>Piece can be adjusted to push faces in various directions.</p>', '2013', 'Perspex, latex, oil paints') }}
-    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/3.jpg', '', '2013', 'Concrete, perspex, oil paints, latex') }}
-    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/4.jpg', '', '2013', 'Concrete, perspex, oil paints, latex') }}
-    {{ macros.slide('Untitled', root_path + 'img/artistinsculpture/5.jpg', '', '2013', 'Concrete, perspex, oil paints, latex') }}
+  <div class="mfp-hide" id="materialsstudy-slideshow">
+    {{ macros.slide('Untitled', root_path + 'img/materialsstudy/3.jpg', '2013', 'Concrete, perspex, oil paints, latex') }}
+    {{ macros.slide('Untitled', root_path + 'img/materialsstudy/4.jpg', '2013', 'Concrete, perspex, oil paints, latex') }}
+    {{ macros.slide('Untitled', root_path + 'img/materialsstudy/5.jpg', '2013', 'Concrete, perspex, oil paints, latex') }}
   </div>
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {% call macros.captioned_img(src=root_path + "img/misc_artistinsculpture_btn.jpg",
-          url="#artistinsculpture-slideshow",
-          title="Artist in Sculpture",
+      {% call macros.captioned_img(src=root_path + "img/misc_materialsstudy_btn.jpg",
+          url="#materialsstudy-slideshow",
+          title="Materials Study",
           is_slideshow=True) %}
-          A selection of sculptures based on casts of the artists head.
+          Sculpture exploring materials based on a bust of the artists head.
       {% endcall %}
     </div>
   </div>
 
   <div class="mfp-hide" id="lostandstolen-slideshow">
-    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/1.jpg', date='2010 - ongoing', 
-      media='Oil on canvas',
-      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>") }}
-    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/2.jpg', date='2010 - ongoing', 
-      media='Oil on canvas',
-      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>",
-      width='narrow') }}
-    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/3.jpg', date='2010 - ongoing', 
-      media='Oil on canvas',
-      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>",
-      width="narrow") }}
-    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/4.jpg', date='2010 - ongoing', 
-      media='Oil on canvas',
-      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>",
-      width='narrow') }}
+    {% call macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/1.jpg', date='2010 - ongoing', 
+      media='Oil on canvas') %}
+      <p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>
+    {% endcall %}
+    {% call macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/2.jpg', date='2010 - ongoing', 
+      media='Oil on canvas', width='narrow') %}
+      <p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>
+    {% endcall %}
+    {% call macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/3.jpg', date='2010 - ongoing', 
+      media='Oil on canvas', width="narrow") %}
+      <p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>
+    {% endcall %}
+    {% call macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/4.jpg', date='2010 - ongoing', 
+      media='Oil on canvas', width="narrow") %}
+      <p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>
+    {% endcall %}
   </div>
 
   <div class="row">

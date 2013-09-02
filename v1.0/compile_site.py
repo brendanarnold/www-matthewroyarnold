@@ -8,7 +8,8 @@ from scss import Scss
 
 DEBUG = True
 TEMPLATES_DIR = "templates"
-SITE_DIR = "templates\\www"
+WWW_TEMPLATES_DIR = "\\www"
+SITE_DIR = TEMPLATES_DIR + WWW_TEMPLATES_DIR
 STATIC_DIR = "static"
 BUILD_DIR = "build"
 CSS_DIR = "css"
@@ -29,23 +30,41 @@ for (path, dirs, fns) in os.walk(SITE_DIR):
     # Templates use forward slash so need to substitute
     tpath = path.replace('\\', '/')
     # Templates also referred to wrt. template directory, so need to
-    # remove the template directory from the path
+    # remove the template directory from the path so left with e.g.
+    # '/www/exhibitions'
     tpath = tpath[len(TEMPLATES_DIR):]
     for fn in fns:
         if not fn.endswith(HTML_TEMPLATE_EXT):
             continue
+        # tfp is e.g. /www/exhibitions/index.tmpl or /www/about.tmpl
         tfp = tpath + '/' + fn
         t = env.get_template(tfp)
         # Files in subfolders need their relative paths changing - next
         # few lines builds the relevant path
         root_path = ''
-        for i in range(len([d for d in tpath.split('/') if d.strip() != '']) - 1):
-          root_path += '../'
+        wpath = tfp[len(WWW_TEMPLATES_DIR):] # Gets the relative web path e.g. /about.tmpl
+        for i in range(len([d for d in wpath.split('/') if d.strip() != '']) - 1):
+            root_path += '../'
         if not root_path:
             root_path = './'
+        # Get the breadcrumb URLs
+        curr_path = root_path
+        for d in (d.strip() for d in wpath.split('/')):
+            # The root
+            if not d:
+                breadcrumb_urls = [(root_path, 'home')]
+            # The template
+            elif d == 'index.tmpl':
+                del breadcrumb_urls[-1]
+            elif not d.endswith('.tmpl'):
+                curr_path += d
+                breadcrumb_urls.append( (curr_path + '/', d) ) 
+        # Finally get the template
         src = t.render(base_template = BASE_TEMPLATE_FN, 
             root_path = root_path,
-            email = EMAIL)
+            email = EMAIL,
+            breadcrumb_urls = breadcrumb_urls)
+
         # Create build directory if it does not already exist
         bdirn = os.path.join(BUILD_DIR, path[len(SITE_DIR)+1:])
         if not os.path.isdir(bdirn):

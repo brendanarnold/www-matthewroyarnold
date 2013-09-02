@@ -8,7 +8,7 @@ Acquiring work for corporations by MATTHEW ROY ARNOLD
 {% endblock %}
 
 {% block header %}
-  {{ macros.standard_header(title='Aquiring Work',
+  {{ macros.standard_header(title='Works for Businesses',
       type='corporate') }}
 {% endblock %}
 
@@ -18,17 +18,27 @@ Acquiring work for corporations by MATTHEW ROY ARNOLD
 {% block maincontent %}
 
   <div class="mfp-hide" id="tastestudies-slideshow">
-    {{ macros.slide('Sizes', src=root_path + 'img/acquire/corporate/taste/1.jpg', copy='<p>The Taste Studies come in three standard sizes, portrait or landscape. Other sizes are possible &ndash; contact for more details.</p>') }}
-    {{ macros.slide('Ready to hang', src=root_path + 'img/acquire/corporate/taste/2.jpg', copy='<p>The pieces are ready to hang.</p>') }}
-    {{ macros.slide('Frames', src=root_path + 'img/acquire/corporate/taste/3.jpg', copy='<p>More unusual frames are available</p>') }}
-    {{ macros.slide('Taste piece detail', src=root_path + 'img/acquire/corporate/taste/4.jpg', copy='<p>Clean lines combine with painterly textures.</p>') }}
+    {% call macros.slide('Sizes', src=root_path + 'img/acquire/corporate/taste/1.jpg') %}
+        <p>The Taste Studies come in three standard sizes, portrait or landscape. Other sizes are possible &ndash; contact for more details.</p>
+    {% endcall %}
+    {% call macros.slide('Ready to hang', src=root_path + 'img/acquire/corporate/taste/2.jpg') %}
+        <p>The pieces are ready to hang.</p>
+    {% endcall %}
+    {% call macros.slide('Frames', src=root_path + 'img/acquire/corporate/taste/3.jpg') %}
+        <p>More unusual frames are available.</p>
+    {% endcall %}
+    {% call macros.slide('Taste piece detail', src=root_path + 'img/acquire/corporate/taste/4.jpg') %}
+        <p>Clean lines combine with painterly textures.</p>
+    {% endcall %}
   </div>
 
 
   <div class="mfp-hide" id="placereactionstudies-slideshow">
-    {{ macros.slide('Place reaction study at U.W.E.', src=root_path + 'img/acquire/corporate/placereactionstudies/1.jpg', copy='<p>Piece is initially installed by the artist to suit the enviroment</p>') }}
-    {{ macros.slide('Place reaction study at U.W.E.', src=root_path + 'img/acquire/corporate/placereactionstudies/2.jpg', copy='') }}
-    {{ macros.slide('Place reaction study at U.W.E.', src=root_path + 'img/acquire/corporate/placereactionstudies/3.jpg', copy='') }}
+    {% call macros.slide('Place reaction study at U.W.E.', src=root_path + 'img/acquire/corporate/placereactionstudies/1.jpg') %}
+        <p>Piece is initially installed by the artist to suit the enviroment</p>
+    {% endcall %}
+    {{ macros.slide('Place reaction study at U.W.E.', src=root_path + 'img/acquire/corporate/placereactionstudies/2.jpg') }}
+    {{ macros.slide('Place reaction study at U.W.E.', src=root_path + 'img/acquire/corporate/placereactionstudies/3.jpg') }}
   </div>
 
   <div class="row">
