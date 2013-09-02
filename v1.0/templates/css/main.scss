@@ -50,6 +50,14 @@ h1 {
   max-width: 100%;
 }
 
+table {
+  @include page_font;
+  th {
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
 div.nav {
   @include page_font;
   margin: 0px 0px 12px 0px;
@@ -213,4 +221,17 @@ div.clear {
   padding: $text_padding;
   display: inline-block;
   margin-bottom: $gutter_normal;
+}
+
+.available-ideas {
+  table {
+    @include page_font;
+    margin: 0px 0px $gutter_normal 0px;
+    .label {
+      width: 157px;
+      vertical-align: top;
+      text-transform: uppercase;
+      padding-right: $gutter_normal;
+    }
+  }
 }

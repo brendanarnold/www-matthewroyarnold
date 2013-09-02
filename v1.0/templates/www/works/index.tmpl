@@ -8,7 +8,7 @@ Works by MATTHEW ROY ARNOLD
 {% endblock %}
 
 {% block header %}
-  {{ macros.standard_header(title='Works', type='Index') }}
+  {{ macros.standard_header(title='Works') }}
 {% endblock %}
 
 {% block navigation %}
@@ -38,10 +38,10 @@ Works by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {% call macros.captioned_img(src=root_path + "img/works_discstudies_btn.jpg",
-            url=root_path + "works/discs.html",
-            title="Disc Studies") %}
-The disc studies comprise of the Image Reaction Studies, the Place Reaction Studies and the Taste Studies each of which expand on the leitmotif of a simple geometric disc pattern.
+      {% call macros.captioned_img(src=root_path + "img/works_apparitionstudies_btn.jpg",
+            url=root_path + "works/apparitions.html",
+            title="Apparition Studies") %}
+The Apparition Studies comprise of the Image Reaction Studies, the Place Reaction Studies and the Taste Studies each of which expand on the leitmotif of a simple circular patterns.
       {% endcall %}
     </div>
     <div class="small-12 large-6 columns">    
@@ -82,10 +82,10 @@ The disc studies comprise of the Image Reaction Studies, the Place Reaction Stud
 
     <div class="small-12 large-6 columns">
       {% call macros.captioned_img(src=root_path + 'img/works_ideasforsale_btn.jpg',
-            url='#artideasforsale-slideshow',
+            url=root_path + 'works/artideasforsale.html',
             title='Art Ideas for Sale',
             is_slideshow=True) %}
-            Modern art practice is called into question when we consider through these works if concept too can be outsourced. Exhibited in the <a href="{{ root_path }}exhibitions/work.html">Work show</a>.
+            An ongoing project where modern art practice is called into question when we consider through these works if concept too can be outsourced. Above linked are current ideas on offer. The Art Ideas for Sale were exhibited in the <a href="{{ root_path }}exhibitions/work.html">Work show</a>.
       {% endcall %}
     </div>
   </div>
@@ -98,7 +98,7 @@ The disc studies comprise of the Image Reaction Studies, the Place Reaction Stud
       {{ macros.slide('Interaction Studies - Lion &amp; Octopus in battle', root_path + 'img/interactionstudies/2.jpg', '2013', 'Mixed media') }}
       {{ macros.slide('Interaction Studies - Dodo &amp; bat', root_path + 'img/interactionstudies/3.jpg', '2013', 'Mixed media') }}
       {{ macros.slide('Interaction Studies - Dodo &amp; bat', root_path + 'img/interactionstudies/4.jpg', '2013', 'Mixed media') }}
-      {% call macros.slide('Interaction Studies - Perspex and Artist\'s Face', root_path + 'img/interactionstudies/5.jpg', '2013', 'Perspex, latex, oil paints') %}
+      {% call macros.slide('Interaction Studies - Perspex and Artist\'s Face', root_path + 'img/interactionstudies/5.jpg', '2013', 'Perspex, latex, oil paints', width='narrow') %}
         <p>Piece can be adjusted to push faces in various directions.</p>
       {% endcall %}
       {% call macros.slide('Untitled', root_path + 'img/interactionstudies/6.jpg', '2013', 'Perspex, latex, oil paints') %}
@@ -118,7 +118,7 @@ The disc studies comprise of the Image Reaction Studies, the Place Reaction Stud
       {% call macros.captioned_img(src=root_path + 'img/works_misc_btn.jpg',
             url=root_path + 'works/misc.html',
             title='Misc. Works') %}
-            Other individual works my Matthew Roy Arnold including the 'Sistine Table' and 'PCS10-The Good Shepherd'.
+            Various individual works by Matthew Roy Arnold including the 'Sistine Table' and 'PCS10-The Good Shepherd'.
       {% endcall %}
     </div>
   </div>

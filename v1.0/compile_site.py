@@ -21,6 +21,7 @@ HTML_TEMPLATE_EXT = ".tmpl"
 
 # Site variables
 EMAIL = 'matthewroyarnold@gmail.com'
+TEL = 'UK 07805 543612'
 
 env = Environment(loader = FileSystemLoader(TEMPLATES_DIR))
 
@@ -62,8 +63,9 @@ for (path, dirs, fns) in os.walk(SITE_DIR):
         # Finally get the template
         src = t.render(base_template = BASE_TEMPLATE_FN, 
             root_path = root_path,
+            breadcrumb_urls = breadcrumb_urls,
             email = EMAIL,
-            breadcrumb_urls = breadcrumb_urls)
+            tel = TEL)
 
         # Create build directory if it does not already exist
         bdirn = os.path.join(BUILD_DIR, path[len(SITE_DIR)+1:])

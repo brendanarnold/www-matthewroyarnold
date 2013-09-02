@@ -8,8 +8,7 @@ About MATTHEW ROY ARNOLD
 {% endblock %}
 
 {% block header %}
-  {{ macros.standard_header(title='About',
-      type='index') }}
+  {{ macros.standard_header(title='About') }}
 {% endblock %}
 
 {% block navigation %}
@@ -56,6 +55,8 @@ About MATTHEW ROY ARNOLD
       <p>Email: <a href="mailto:{{ email }}" itemprop="email">{{ email }}</a></p>
 
       <p>Facebook: <a href="http://www.facebook.com/MatthewRoyArnold">/MatthewRoyArnold</a></p>
+
+      <p>Tel: {{ tel }}</p>
 
     </div>
   </div>

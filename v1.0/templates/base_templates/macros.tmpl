@@ -1,3 +1,17 @@
+{% macro ideaforsale(buyer='', price='', notes='None') %}
+  <table itemscope itemtype="http://schema.org/Product">
+    <meta itemprop="name" content="An idea suitable for {{ buyer }}" />
+    <tr>
+      <td class="label">Suitable for</td><td>{{ buyer }}</td>
+    </tr>
+    <tr itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+      <td class="label">Price</td><td itemprop="price">{{ price }}</td>
+    </tr>
+    <tr>
+      <td class="label">Notes</td><td>{{ notes }}</td>
+    </tr>
+  </table>
+{% endmacro %}
 
 {% macro captioned_img(src, url, title, caption='', is_slideshow=False, w="467", h="238" ) %}
       <div class="nav">
@@ -11,10 +25,7 @@
       {% endif %}
 {% endmacro %}
 
-
-
-
-{% macro standard_header(title='', type='') %}
+{% macro standard_header(title='') %}
   <div class="row">
     <div class="small-12 columns">
       <a href="{{ root_path }}">
@@ -39,10 +50,6 @@
 {% endmacro %}
 
 
-{% macro email() %}<a href="mailto:matthewroyarnold@gmail.com">matthewroyarnold@gmail.com</a>{% endmacro %}
-
-
-
 {% macro slide(title='', src='', date='', media='', width='normal') %}
 <div class="slide slide-{{ width }}">
   {% if src %}
@@ -62,4 +69,3 @@
 </div>
 {% endmacro %}
 
-{% macro itemscope(t) %} itemscope itemtype="http://schema.org/{{ t }}"{% endmacro %}

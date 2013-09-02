@@ -1,0 +1,44 @@
+{% extends base_template %}
+
+{% block title %}
+Art Ideas for Sale by MATTHEW ROY ARNOLD
+{% endblock %}
+
+{% block inpagecss %}
+{% endblock %}
+
+{% block header %}
+  {{ macros.standard_header('Art Ideas for Sale') }}
+{% endblock %}
+
+{% block navigation %}
+{% endblock %}
+
+{% block maincontent %}
+  <div class="row">
+    <div class="small-12 columns">
+
+    <h2>About</h2>
+
+    <p>The fabrication of works is commonly outsourced to people other than the artist. Art Ideas for Sale seeks to determine whether it is possible to outsource concept as well. The project is ongoing and on this page a series of ideas are up for sale. They are suitable for a wide range of artists from simple small scale ideas to ones for the fourth plinth in Trafalgar Square.</p>
+
+    <p>As part of the transaction, Matthew relinquishes all intellectual claim to the idea and is subject to a strict confidentiality agreement so the providence of the idea cannot be known.</p>
+
+    <p>Art Ideas for Sale was exhibited in the <a href="{{ root_path }}exhibitions/work.html">Work show</a>.</p>
+
+
+    <h2>Available Ideas</h2>
+
+    <div class="available-ideas">
+      {{ macros.ideaforsale(buyer='potential candidate for the fourth plinth', price='&pound;1000') }}
+      {{ macros.ideaforsale(buyer='someone who wants to make a living from art', price='&pound;100') }}
+      {{ macros.ideaforsale(buyer='someone interested in craft', price='&pound;100') }}
+      {{ macros.ideaforsale(buyer='someone who has just started their practice', price='&pound;100') }}
+      {{ macros.ideaforsale(buyer='a digital artist', price='&pound;100') }}
+    </div>
+
+    <p>If you are interested in buying an idea, please email <a href="{{ email }}">{{ email }}</a> or telephone {{ tel }}.</p>
+
+    </div>
+  </div>
+{% endblock %}

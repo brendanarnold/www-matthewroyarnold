@@ -8,8 +8,7 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
 {% endblock %}
 
 {% block header %}
-  {{ macros.standard_header(title='Works for Galleries',
-      type='galleries') }}
+  {{ macros.standard_header(title='Works for Galleries') }}
 {% endblock %}
 
 {% block navigation %}
@@ -37,7 +36,7 @@ Acquiring work for galleries by MATTHEW ROY ARNOLD
         <p class="figure-caption">View Gallery, Bristol</p>
       </div>
 
-      <p>Matthew has exhibited his work in several galleries around the UK. For references, please email {{ macros.email() }} or telephone on 07835 122531.</p>
+      <p>Matthew has exhibited his work in several galleries around the UK. For references, please email <a href="mailto:{{ email }}">{{ email }}</a> or telephone on {{ tel }}.</p>
 
     </div>
   </div>
