@@ -100,4 +100,40 @@ Misc. work by MATTHEW ROY ARNOLD
     </div>
   </div>
 
+  <div class="mfp-hide" id="lostandstolen-slideshow">
+    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/1.jpg', date='2010 - ongoing', 
+      media='Oil on canvas',
+      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>") }}
+    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/2.jpg', date='2010 - ongoing', 
+      media='Oil on canvas',
+      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>",
+      width='narrow') }}
+    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/3.jpg', date='2010 - ongoing', 
+      media='Oil on canvas',
+      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>",
+      width="narrow") }}
+    {{ macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/4.jpg', date='2010 - ongoing', 
+      media='Oil on canvas',
+      copy="<p>A continuing project to document the items that have been lost and/or stolen from the Arnold brothers.</p>",
+      width='narrow') }}
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <h2 id="lostandstolen">Lost and Stolen</h2>
+      <p>A document of items lost and stolen by the artist and his brother.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-6 columns">
+      {% call macros.captioned_img(src=root_path + 'img/works_lostandstolen_btn.jpg',
+            url='#lostandstolen-slideshow',
+            title='Lost and Stolen',
+            is_slideshow=True) %}
+            A continuously updated document of the things that have gone missing throughout a particular persons life.
+      {% endcall %}
+    </div>
+  </div>
+
 {% endblock %}
