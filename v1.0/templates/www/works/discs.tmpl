@@ -8,7 +8,7 @@ Disc studies by MATTHEW ROY ARNOLD
 {% endblock %}
 
 {% block header %}
-  {{ macros.standard_header('Disc Studies', 'Works', root_path) }}
+  {{ macros.standard_header('Disc Studies', 'Works') }}
 {% endblock %}
 
 {% block navigation %}
@@ -72,28 +72,31 @@ Disc studies by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/discs_excuse_btn.jpg",
+      {% call macros.captioned_img(src=root_path + "img/discs_excuse_btn.jpg",
           url="#excuse-slideshow",
           title="Excuse",
-          is_slideshow=True,
-          caption="Discs overlaid on PlayBoy pin-ups.") }}
+          is_slideshow=True) %}
+          Discs overlaid on PlayBoy pin-ups.
+      {% endcall %}
     </div>
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/discs_onsecondglance_btn.jpg",
+      {% call macros.captioned_img(src=root_path + "img/discs_onsecondglance_btn.jpg",
           url="#onsecondglance-slideshow",
           title="On Second Glance",
-          is_slideshow=True,
-          caption="Discs overlaid on 6&times;4&quot; images from the past.") }}
+          is_slideshow=True) %}
+          Discs overlaid on 6&times;4&quot; images from the past.
+      {% endcall %}
     </div>
   </div>
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/discs_earlycrimson_btn.jpg", 
+      {% call macros.captioned_img(src=root_path + "img/discs_earlycrimson_btn.jpg", 
           url="#earlycrimson-slideshow", 
           title="Early Crimson", 
-          is_slideshow=True, 
-          caption="Commissioned discs overlaid on a selection of images chosen by the patron.") }}
+          is_slideshow=True) %}
+          Commissioned discs overlaid on a selection of images chosen by the patron.
+      {% endcall %}
     </div>
   </div>
 
@@ -112,11 +115,12 @@ Disc studies by MATTHEW ROY ARNOLD
   
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/discs_placereactionstudies_btn.jpg",
+      {% call macros.captioned_img(src=root_path + "img/discs_placereactionstudies_btn.jpg",
         url="#uweinstallation-slideshow",
         title='Place Reaction Studies',
-        is_slideshow=True,
-        caption="An early installation commissioned by U.W.E.") }}
+        is_slideshow=True) %}
+        An early installation commissioned by U.W.E.
+      {% endcall %}
     </div>
   </div>
 
@@ -142,11 +146,12 @@ Disc studies by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path+"img/discs_tastestudies_btn.jpg",
+      {% call macros.captioned_img(src=root_path+"img/discs_tastestudies_btn.jpg",
           url="#exampletaste-slideshow",
           title="Example Taste Study pieces",
-          is_slideshow=True,
-          caption="Example Taste Study pieces") }}
+          is_slideshow=True) %}
+          Example Taste Study pieces.
+      {% endcall %}
     </div>
   </div>
   

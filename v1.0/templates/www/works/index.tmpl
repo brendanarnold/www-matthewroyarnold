@@ -8,7 +8,7 @@ Works by MATTHEW ROY ARNOLD
 {% endblock %}
 
 {% block header %}
-  {{ macros.standard_header(title='Works', type='Index', root_path=root_path) }}
+  {{ macros.standard_header(title='Works', type='Index') }}
 {% endblock %}
 
 {% block navigation %}
@@ -38,17 +38,19 @@ Works by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/works_discstudies_btn.jpg",
+      {% call macros.captioned_img(src=root_path + "img/works_discstudies_btn.jpg",
             url=root_path + "works/discs.html",
-            title="Disc Studies",
-            caption='The disc studies comprise of the Image Reaction Studies, the Place Reaction Studies and the Taste Studies each of which expand on the leitmotif of a simple geometric disc pattern.') }}
+            title="Disc Studies") %}
+The disc studies comprise of the Image Reaction Studies, the Place Reaction Studies and the Taste Studies each of which expand on the leitmotif of a simple geometric disc pattern.
+      {% endcall %}
     </div>
     <div class="small-12 large-6 columns">    
-      {{ macros.captioned_img(src=root_path + 'img/works_spaceforsale_btn.jpg',
+      {% call macros.captioned_img(src=root_path + 'img/works_spaceforsale_btn.jpg',
             url='#artspaceforsale-slideshow',
             title="Art Space for Sale",
-            is_slideshow=True,
-            caption='Art Space for Sale event explors the conflict of commerce and artistic integrety in art. Read more in the <a href="%sexhibitions/artspaceforsale.html">exhibition write up</a>.' % root_path) }}
+            is_slideshow=True) %}
+            Art Space for Sale event explores the conflict of commerce and artistic integrity in art. Read more in the <a href="{{ root_path }}exhibitions/artspaceforsale.html">exhibition write up</a>.
+      {% endcall %}
     </div>
   </div>
 
@@ -70,19 +72,21 @@ Works by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + 'img/works_selfportraits_btn.jpg',
+      {% call macros.captioned_img(src=root_path + 'img/works_selfportraits_btn.jpg',
             url='#selfportraits-slideshow',
             title="Outsourced Self Portraits",
-            is_slideshow=True,
-            caption='Many artists no longer fabricate their own works, with the emphasis in these cases ostensibly being on the concept. Exhibited in the <a href="%sexhibitions/work.html">Work show</a>, these works explore how the nature of the work may be affected by outsourcing practices.' % root_path ) }}
+            is_slideshow=True) %}
+            Many artists no longer fabricate their own works, with the emphasis in these cases ostensibly being on the concept. Exhibited in the <a href="{{ root_path }}exhibitions/work.html">Work show</a>, these works explore how the nature of the work may be affected by outsourcing practices.
+      {% endcall %}
     </div>
 
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + 'img/works_ideasforsale_btn.jpg',
+      {% call macros.captioned_img(src=root_path + 'img/works_ideasforsale_btn.jpg',
             url='#artideasforsale-slideshow',
             title='Art Ideas for Sale',
-            is_slideshow=True,
-            caption='Modern art practice is called into question when we consider through these works if concept too can be outsourced. Exhibited in the <a href="%sexhibitions/work.html">Work show</a>.' % root_path ) }}
+            is_slideshow=True) %}
+            Modern art practice is called into question when we consider through these works if concept too can be outsourced. Exhibited in the <a href="{{ root_path }}exhibitions/work.html">Work show</a>.
+      {% endcall %}
     </div>
   </div>
 
@@ -107,11 +111,12 @@ Works by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + 'img/works_lostandstolen_btn.jpg',
+      {% call macros.captioned_img(src=root_path + 'img/works_lostandstolen_btn.jpg',
             url='#lostandstolen-slideshow',
             title='Lost and Stolen',
-            is_slideshow=True,
-            caption='A continuously updated document of the things that have gone missing throughout a particular persons life.' ) }}
+            is_slideshow=True) %}
+            A continuously updated document of the things that have gone missing throughout a particular persons life.
+      {% endcall %}
     </div>
 
     <div class="mfp-hide" id="interactionstudies-slideshow">
@@ -122,20 +127,22 @@ Works by MATTHEW ROY ARNOLD
     </div>
 
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + 'img/works_interactions_btn.jpg',
+      {% call macros.captioned_img(src=root_path + 'img/works_interactions_btn.jpg',
             url='#interactionstudies-slideshow',
             title='Interaction Studies',
-            is_slideshow=True,
-            caption='Studies into using art to explore scenarios that other mediums cannot capture, in particular the impossible meeting of incongruous subjects.' ) }}
+            is_slideshow=True) %}
+            Studies into using art to explore scenarios that other mediums cannot capture, in particular the impossible meeting of incongruous subjects.
+      {% endcall %}
     </div>
   </div>
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + 'img/works_misc_btn.jpg',
+      {% call macros.captioned_img(src=root_path + 'img/works_misc_btn.jpg',
             url=root_path + 'works/misc.html',
-            title='Misc. Works',
-            caption="Other individual works my Matthew Roy Arnold including the 'Sistine Table' and 'PCS10-The Good Shepherd'." ) }}
+            title='Misc. Works') %}
+            Other individual works my Matthew Roy Arnold including the 'Sistine Table' and 'PCS10-The Good Shepherd'.
+      {% endcall %}
     </div>
   </div>
 {% endblock %}

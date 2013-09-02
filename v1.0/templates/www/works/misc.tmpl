@@ -8,7 +8,7 @@ Misc. work by MATTHEW ROY ARNOLD
 {% endblock %}
 
 {% block header %}
-  {{ macros.standard_header('Misc. works', 'Works', root_path) }}
+  {{ macros.standard_header('Misc. works', 'Works') }}
 {% endblock %}
 
 {% block navigation %}
@@ -38,11 +38,12 @@ Misc. work by MATTHEW ROY ARNOLD
     
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/misc_thegoodshepherd_btn.jpg",
+      {% call macros.captioned_img(src=root_path + "img/misc_thegoodshepherd_btn.jpg",
           url="#thegoodshepherd-slideshow",
           title="PCS10-The Good Shepherd",
-          is_slideshow=True,
-          caption="A selection of images of the finished paint-by-numbers" ) }}
+          is_slideshow=True) %}
+          A selection of images of the finished paint-by-numbers.
+      {% endcall %}
     </div>
   </div>
 
@@ -64,11 +65,12 @@ Misc. work by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/misc_sistinetable_btn.jpg",
+      {% call macros.captioned_img(src=root_path + "img/misc_sistinetable_btn.jpg",
           url="#sistinetable-slideshow",
           title="Sistine Table",
-          is_slideshow=True,
-          caption="A selection of images of the installation" ) }}
+          is_slideshow=True) %}
+          A selection of images of the installation.
+      {% endcall %}
     </div>
   </div>
 
@@ -89,11 +91,12 @@ Misc. work by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/misc_artistinsculpture_btn.jpg",
+      {% call macros.captioned_img(src=root_path + "img/misc_artistinsculpture_btn.jpg",
           url="#artistinsculpture-slideshow",
           title="Artist in Sculpture",
-          is_slideshow=True,
-          caption="A selection of sculptures based on casts of the artists head." ) }}
+          is_slideshow=True) %}
+          A selection of sculptures based on casts of the artists head.
+      {% endcall %}
     </div>
   </div>
 

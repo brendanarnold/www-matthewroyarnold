@@ -9,8 +9,7 @@ Acquiring work by MATTHEW ROY ARNOLD
 
 {% block header %}
   {{ macros.standard_header(title='Aquiring Work',
-      type='index',
-      root_path=root_path) }}
+      type='index') }}
 {% endblock %}
 
 {% block navigation %}
@@ -21,26 +20,29 @@ Acquiring work by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/acquire_individual_btn.jpg",
+      {% call macros.captioned_img(src=root_path + "img/acquire_individual_btn.jpg",
             url=root_path + "acquire/individual.html",
-            title="Individuals",
-            caption='Information for individuals wanting to obtain work.') }}
+            title="Individuals") %}
+            Information for individuals wanting to obtain work.
+      {% endcall %}
     </div>
 
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/acquire_corporate_btn.jpg",
+      {% call macros.captioned_img(src=root_path + "img/acquire_corporate_btn.jpg",
             url=root_path + "acquire/corporate.html",
-            title="Corporate",
-            caption='Information for companies wanting to obtain work.') }}
+            title="Corporate") %}
+            Information for companies wanting to obtain work.'
+      {% endcall %}
     </div>
   </div>
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {{ macros.captioned_img(src=root_path + "img/acquire_galleries_btn.jpg",
+      {% call macros.captioned_img(src=root_path + "img/acquire_galleries_btn.jpg",
             url=root_path + "acquire/galleries.html",
-            title="Galleries",
-            caption='Information for galleries wishing to exhibit work.') }}
+            title="Galleries") %}
+            Information for galleries wishing to exhibit work.
+      {% endcall %}
     </div>
   </div>
 {% endblock %}

@@ -6,15 +6,15 @@
           <img src="{{ src }}" width="{{ w }}" height="{{ h }}" alt="{{ title }}" />
         </a>
       </div>
-      {% if caption %}
-      <p class="nav-caption">{{ caption }}</p>
+      {% if caller %}
+      <p class="nav-caption">{{ caller() }}</p>
       {% endif %}
 {% endmacro %}
 
 
 
 
-{% macro standard_header(title='', type='', root_path='', microdata_title='', microdata_subtitle='') %}
+{% macro standard_header(title='', type='', microdata_title='', microdata_subtitle='') %}
   <div class="row">
     <div class="small-12 columns">
       <a href="{{ root_path }}">
