@@ -17,23 +17,62 @@ Works by MATTHEW ROY ARNOLD
 {% block maincontent %}
 
   <div class="mfp-hide" id="artspaceforsale-slideshow">
-    {{ macros.slide('DeWalt', root_path + 'img/artspaceforsale/1.jpg', '2010', 'Bronze cast', width='narrow') }}
     {{ macros.slide('Placeholder canvas', root_path + 'img/artspaceforsale/2.jpg', '2010', 'Oil on cavas', width='narrow') }}
     {{ macros.slide('Winsor &amp; Newton', root_path + 'img/artspaceforsale/3.jpg', '2010', 'Oil on cavas') }}
+    {{ macros.slide('DeWalt', root_path + 'img/artspaceforsale/1.jpg', '2010', 'Bronze cast', width='narrow') }}
     {{ macros.slide('Milk Stout', root_path + 'img/artspaceforsale/4.jpg', '2010', 'Oil on cavas') }}
     {{ macros.slide('Sunrise', root_path + 'img/artspaceforsale/5.jpg', '2010', 'Oil on cavas') }}
     {{ macros.slide('No. 7', root_path + 'img/artspaceforsale/6.jpg', '2010', 'Oil on cavas') }}
-    {{ macros.slide('Magna', root_path + 'img/artspaceforsale/7.jpg', '2010', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Bristol Drawing School', root_path + 'img/artspaceforsale/8.jpg', '2010', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Bristol Ferries', root_path + 'img/artspaceforsale/9.jpg', '2010', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Bristol Fine Art', root_path + 'img/artspaceforsale/10.jpg', '2010', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Crack Magazine', root_path + 'img/artspaceforsale/11.jpg', '2010', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Cadburys', root_path + 'img/artspaceforsale/12.jpg', '2010', 'Oil on cavas') }}
-    {{ macros.slide('Watershed', root_path + 'img/artspaceforsale/13.jpg', '2006', 'Oil on cavas', width='narrow') }}
     {{ macros.slide('Bristol Fine Art', root_path + 'img/artspaceforsale/14.jpg', '2006', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Tantric Jazz Bar', root_path + 'img/artspaceforsale/15.jpg', '2006', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Bristol Old Vic', root_path + 'img/artspaceforsale/16.jpg', '2006', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Hippodrome', root_path + 'img/artspaceforsale/17.jpg', '2006', 'Oil on cavas', width='narrow') }}
+
+    <div class="slide slide-narrow">
+      <div class="artspaceforsale-banner-advert-container">
+
+<div class="ad-container" style="width: 336; height: 280;">
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-2260106031795824";
+  /* Art Space for Sale Text Ad */
+  google_ad_slot = "2052873396";
+  google_ad_width = 336;
+  google_ad_height = 280;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
+<div class="ad-container" style="width: 250; height: 250;">
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-2260106031795824";
+  /* Art Space for Sale Square Ad */
+  google_ad_slot = "3529606595";
+  google_ad_width = 250;
+  google_ad_height = 250;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
+      </div>
+      <div class="slide-placard">
+        <p class="slide-placard-title">Google AdSense</p>
+        <p class="slide-placard-subtitle">
+          <span class="slide-placard-date">2013</span>
+        </p>
+        <div class="spacer"></div>
+      </div>
+    </div>
+    
+    <div class="slide slide-narrow">
+      <div class="artspaceforsale-advert">
+        <p class="header">This Art Space for Sale</p>
+        <p>&pound;150</p>
+        <p>If Interested, email <a href="{{ email }}">{{ email }}</a> or telephone {{ tel }}</p>
+      </div>
+    </div>
+
+
   </div>
 
   <div class="row">
@@ -49,7 +88,7 @@ The Apparition Studies comprise of the Image Reaction Studies, the Place Reactio
       <div class="nav">
         <a href="#artspaceforsale-slideshow" class="slideshow-link">
           <span>Art Space for Sale</span>
-          <div style="background-image: url({{ root_path }}img/works_spaceforsale_btn.jpg); background-size: cover; background-repeat: no-repeat; width: 100%; height: 0px; padding-bottom: 50%; position: relative;">
+          <div class="artspaceforsale-btn" style="background-image: url({{ root_path }}img/works_spaceforsale_btn.jpg);">
             <!-- Adsense banner -->
             <div class="artspaceforsale-btn-ad-container">
               <script type="text/javascript"><!--

@@ -252,12 +252,42 @@ div.clear {
   }
 }
 
-.artspaceforsale-btn-ad-container {
-  width: 468px;
-  height: 60px;
-  margin: 0px auto;
-  border: 1px solid blue;
-  position: absolute;
-  top: 80px;
-  left: 3px;
+.artspaceforsale-btn {
+  // background-image specified inline with HTML since requires a 
+  // root_path relative URL
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 50%; // This ensures height is propto width since padding % is calculated from width
+  position: relative;
+  .artspaceforsale-btn-ad-container {
+    width: 468px;
+    height: 60px;
+    margin: 0px auto;
+    border: 1px solid blue;
+    position: absolute;
+    top: 80px;
+    left: 3px;
+  }
+}
+
+.artspaceforsale-banner-advert-container {
+  border: 1px solid black;
+  padding: $gutter_large $gutter_small $gutter_large $gutter_small;
+  .ad-container {
+    border: 1px solid blue;
+    width: auto 0px;
+  }
+}
+
+.artspaceforsale-advert {
+  border: 1px solid black;
+  padding: 2 * $gutter_large $gutter_small 4 * $gutter_large $gutter_small;
+  p {
+    text-align: center;
+  }
+  .header {
+    text-transform: uppercase;
+  }
 }
