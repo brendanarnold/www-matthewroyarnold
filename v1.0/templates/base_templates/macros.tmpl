@@ -1,8 +1,7 @@
 {% macro ideaforsale(buyer='', price='', notes='None') %}
   <table itemscope itemtype="http://schema.org/Product">
-    <meta itemprop="name" content="An idea suitable for {{ buyer }}" />
     <tr>
-      <td class="label">Suitable for</td><td>{{ buyer }}</td>
+      <td class="label" itemprop="name" content="An idea suitable for {{ buyer }}">Suitable for</td><td>{{ buyer }}</td>
     </tr>
     <tr itemprop="offers" itemscope itemtype="http://schema.org/Offer">
       <td class="label">Price</td><td itemprop="price">{{ price }}</td>
@@ -13,6 +12,7 @@
   </table>
 {% endmacro %}
 
+{# Don't forget to update the Space for Sale button when changing this #}
 {% macro captioned_img(src, url, title, caption='', is_slideshow=False, w="467", h="238" ) %}
       <div class="nav">
         <a href="{{ url }}" {% if is_slideshow %}class="slideshow-link"{% endif %}>
@@ -54,7 +54,7 @@
 {% endmacro %}
 
 
-{% macro slide(title='', src='', date='', media='', width='normal') %}
+{% macro slide(title='', src='', date='', media='', width='normal', price='') %}
 <div class="slide slide-{{ width }}">
   {% if src %}
   <div class="slide-img-container">
@@ -67,7 +67,8 @@
     {% if media %}<span class="slide-placard-media">{{ media }}</span>{% endif %}
     {% if date %}<span class="slide-placard-date">{{ date }}</span>{% endif %}
     </p>{% endif %}
-    <div class="clear"></div>
+    {% if price %}<p class="slide-placard-price">{{ price }}</p>{% endif %}
+    <div class="spacer"></div>
     {% if caller %}{{ caller() }}{% endif %}
   </div>
 </div>

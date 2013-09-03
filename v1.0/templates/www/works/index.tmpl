@@ -45,22 +45,41 @@ The Apparition Studies comprise of the Image Reaction Studies, the Place Reactio
       {% endcall %}
     </div>
     <div class="small-12 large-6 columns">    
-      {% call macros.captioned_img(src=root_path + 'img/works_spaceforsale_btn.jpg',
-            url='#artspaceforsale-slideshow',
-            title="Art Space for Sale",
-            is_slideshow=True) %}
-            Art Space for Sale event explores the conflict of commerce and artistic integrity in art. Read more in the <a href="{{ root_path }}exhibitions/artspaceforsale.html">exhibition write up</a>.
-      {% endcall %}
+      <!-- custom nav button to allow adverts! -->
+      <div class="nav">
+        <a href="#artspaceforsale-slideshow" class="slideshow-link">
+          <span>Art Space for Sale</span>
+          <div style="background-image: url({{ root_path }}img/works_spaceforsale_btn.jpg); background-size: cover; background-repeat: no-repeat; width: 100%; height: 0px; padding-bottom: 50%; position: relative;">
+            <!-- Adsense banner -->
+            <div class="artspaceforsale-btn-ad-container">
+              <script type="text/javascript"><!--
+              google_ad_client = "ca-pub-2260106031795824";
+              /* Button Ad */
+              google_ad_slot = "9951243392";
+              google_ad_width = 468;
+              google_ad_height = 60;
+              //-->
+              </script>
+              <script type="text/javascript"
+              src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+              </script>
+            </div>
+            <!-- end AdSense banner -->
+          </div>
+        </a>
+      </div>
+      <p class="nav-caption">Art Space for Sale event explores the conflict of commerce and artistic integrity in art. Read more in the <a href="{{ root_path }}exhibitions/artspaceforsale.html">exhibition write up</a>.</p>
     </div>
+    <!-- end custom nav button -->
   </div>
 
   <div class="mfp-hide" id="selfportraits-slideshow">
-    {{ macros.slide('Self Portrait 1', root_path + 'img/outsourcedselfportraits/1.jpg', '2011', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Self Portrait 2', root_path + 'img/outsourcedselfportraits/2.jpg', '2011', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Self Portrait 3', root_path + 'img/outsourcedselfportraits/3.jpg', '2011', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Self Portrait 4', root_path + 'img/outsourcedselfportraits/4.jpg', '2011', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Self Portrait 5 (private collection)', root_path + 'img/outsourcedselfportraits/5.jpg', '2011', 'Oil on cavas', width='narrow') }}
-    {{ macros.slide('Self Portrait 6', root_path + 'img/outsourcedselfportraits/6.jpg', '2011', 'Oil on cavas', width='narrow') }}
+    {{ macros.slide('Self Portrait 1', root_path + 'img/outsourcedselfportraits/1.jpg', '2011', 'Oil on cavas', width='narrow', price="&pound;145") }}
+    {{ macros.slide('Self Portrait 2', root_path + 'img/outsourcedselfportraits/2.jpg', '2011', 'Oil on cavas', width='narrow', price="&pound;145") }}
+    {{ macros.slide('Self Portrait 3', root_path + 'img/outsourcedselfportraits/3.jpg', '2011', 'Oil on cavas', width='narrow', price="&pound;145") }}
+    {{ macros.slide('Self Portrait 4', root_path + 'img/outsourcedselfportraits/4.jpg', '2011', 'Oil on cavas', width='narrow', price="&pound;145") }}
+    {{ macros.slide('Self Portrait 5', root_path + 'img/outsourcedselfportraits/5.jpg', '2011', 'Oil on cavas', width='narrow', price="Sold (private collection)") }}
+    {{ macros.slide('Self Portrait 6', root_path + 'img/outsourcedselfportraits/6.jpg', '2011', 'Oil on cavas', width='narrow', price="&pound;145") }}
   </div>
 
   <div class="mfp-hide" id="artideasforsale-slideshow">
