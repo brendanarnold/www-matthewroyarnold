@@ -7,17 +7,21 @@ $border_width: 1px;
 $subheader_weight: 300;
 $page_font_size: 1.1875em;
 $header_font_size: 5.75em;
+$site_header_font_size: 3.9em;
 
 
 @mixin page_font {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: $page_font_size;
-  line-height: 1.4em;
+  line-height: 1.4;
 }
 
-h1 {
-  margin: 0px 0px $gutter_large 0px;
+@mixin header_font {
+  font-family: 'Jura', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 0.9;
 }
 
 
@@ -41,12 +45,9 @@ h2 {
 }
 
 h1 {
-  font-family: 'Jura', sans-serif;
-  text-transform: uppercase;
-  font-weight: 300;
+  @include header_font;
   font-size: $header_font_size;
-  line-height: 85px;
-  margin-bottom: $gutter_small;
+  margin: 0px 0px $gutter_small 0px;
   max-width: 100%;
 }
 
@@ -146,6 +147,16 @@ ul, ol {
   height: 151px;
   margin: $gutter_normal 0px $gutter_normal 0px;
 }
+
+#site-header {
+  @include header_font;
+  font-size: $site_header_font_size;
+  margin: $gutter_normal 0px $gutter_normal 0px;
+  a {
+    color: black;
+  }
+}
+
 
 .page-type-header {
   @include page_font;
