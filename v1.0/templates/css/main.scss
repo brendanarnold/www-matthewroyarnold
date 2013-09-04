@@ -252,6 +252,8 @@ div.clear {
   }
 }
 
+// Some Art Space for Sale specific CSS to caterfor the adverts
+
 .artspaceforsale-btn {
   // background-image specified inline with HTML since requires a 
   // root_path relative URL
@@ -289,5 +291,16 @@ div.clear {
   }
   .header {
     text-transform: uppercase;
+  }
+}
+
+.artspaceforsale-others-container {
+  padding: 2 * $gutter_large $gutter_small 4 * $gutter_large $gutter_small;
+  ul {
+    margin: 0px auto 0px auto;
+    list-style-type: none;
+    li {
+      display: inline-block;
+    }
   }
 }
