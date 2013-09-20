@@ -304,3 +304,13 @@ div.clear {
     }
   }
 }
+
+
+.announce-container {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 5px;
+  p {
+    margin: 0px;
+  }
+}
