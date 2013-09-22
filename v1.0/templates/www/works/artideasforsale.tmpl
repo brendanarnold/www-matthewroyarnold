@@ -30,11 +30,10 @@ Art Ideas for Sale by MATTHEW ROY ARNOLD
     <h2>Available Ideas</h2>
 
     <div class="available-ideas">
-      {{ macros.ideaforsale(buyer='potential candidate for the fourth plinth', price='&pound;1000') }}
-      {{ macros.ideaforsale(buyer='someone who wants to make a living from art', price='&pound;100') }}
-      {{ macros.ideaforsale(buyer='someone interested in craft', price='&pound;100') }}
-      {{ macros.ideaforsale(buyer='someone who has just started their practice', price='&pound;100') }}
-      {{ macros.ideaforsale(buyer='a digital artist', price='&pound;100') }}
+      {{ macros.ideaforsale(buyer='conceptual artist who is a potential candidate for the fourth plinth', price='&pound;1000', notes='Requires a planning stage') }}
+      {{ macros.ideaforsale(buyer='artist wanting to make site specific performance art', price='&pound;1000', notes='Must have fabrication capabilities') }}
+      {{ macros.ideaforsale(buyer='South West UK based photographer', price='&pound;100', notes='Work has commercial potential') }}
+      {{ macros.ideaforsale(buyer='sculptor with literally no ideas of their own', price='&pound;10') }}
     </div>
 
     <p>If you are interested in buying an idea, please email <a href="{{ email }}">{{ email }}</a> or telephone {{ tel }}.</p>
