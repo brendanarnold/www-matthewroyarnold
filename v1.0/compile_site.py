@@ -75,7 +75,7 @@ for (path, dirs, fns) in os.walk(SITE_DIR):
         # Write to file
         out_fn = os.path.join(bdirn, fn.split('.')[0] + '.html')
         with open(out_fn, 'w') as out_fh:
-            out_fh.write(src)
+            out_fh.write(src.encode('utf-8'))
         print out_fn
 
 # Compile CSS
