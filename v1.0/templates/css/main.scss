@@ -47,8 +47,13 @@ h2 {
 h1 {
   @include header_font;
   font-size: $header_font_size;
-  margin: 0px 0px $gutter_small 0px;
+  margin: $gutter_small 0px $gutter_small 0px;
   max-width: 100%;
+  position: relative;
+}
+
+h1#index-site-header {
+  margin: $gutter_normal 0px $gutter_large 0px;
 }
 
 table {
@@ -64,6 +69,7 @@ div.nav {
   margin: 0px 0px 12px 0px;
   border: $border_width solid black;
   padding: $gutter_tiny;
+  background: white;
   span {
     display: block;
     background: white;
@@ -81,7 +87,7 @@ div.nav {
 
 p.nav-caption {
     margin: 0px $gutter_tiny $gutter_normal $gutter_tiny;
-  }
+}
 
 
 
@@ -90,6 +96,15 @@ p.nav-caption {
   text-align: right;
   border-top: $border_width solid black;
   margin-top: $gutter_large;
+}
+
+#bg-container {
+  position: relative;
+  #bg-img-container {
+    position: absolute;
+    right: -96px;
+    top: -190px;
+  }
 }
 
 
@@ -158,6 +173,7 @@ ul, ol {
   @include header_font;
   font-size: $site_header_font_size;
   margin: $gutter_normal 0px $gutter_normal 0px;
+  position: relative;
   a {
     color: black;
   }
@@ -171,6 +187,7 @@ ul, ol {
   text-transform: uppercase;  
   margin-bottom: $gutter_large;
   font-weight: $subheader_weight;
+  background: white;
 }
 
 .signed {
