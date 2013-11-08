@@ -3,22 +3,24 @@ $gutter_tiny: 5px;
 $gutter_large: 40px;
 $gutter_normal: 20px;
 $gutter_small: 10px;
+$gutter_huge: 60px;
 $border_width: 1px;
 $subheader_weight: 300;
-$page_font_size: 1.1875em;
+// $page_font_size: 1.1875em;
+$page_font_size: 1em;
 $header_font_size: 5.75em;
 $site_header_font_size: 3.9em;
 
 
 @mixin page_font {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   font-size: $page_font_size;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 @mixin header_font {
-  font-family: 'Jura', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 300;
   line-height: 0.9;
@@ -36,10 +38,11 @@ a {
 
 h2 {
   @include page_font;
-  text-transform: uppercase;
-  padding: $text_padding;
+  // text-transform: uppercase;
+  // padding: $text_padding;
   display: inline-block;
-  border: $border_width solid black;
+  // border: $border_width solid black;
+  font-size: 1.75em;
   line-height: $page_font_size;
   margin: $gutter_normal 0px $gutter_normal 0px;
 }
@@ -47,13 +50,16 @@ h2 {
 h1 {
   @include header_font;
   font-size: $header_font_size;
-  margin: $gutter_small 0px $gutter_small 0px;
+  margin: $gutter_small 0px 3px 0px;
+  padding: 0px 0px $gutter_small 0px;
   max-width: 100%;
   position: relative;
+  border-bottom: 1px solid black;
+  display: inline-block;
 }
 
 h1#index-site-header {
-  margin: $gutter_normal 0px $gutter_large 0px;
+  margin: $gutter_normal 0px 3px 0px;
 }
 
 table {
@@ -66,36 +72,54 @@ table {
 
 div.nav {
   @include page_font;
-  margin: 0px 0px 12px 0px;
-  border: $border_width solid black;
-  padding: $gutter_tiny;
+  margin: 0px 0px $gutter_small 0px;
   background: white;
+  position: relative;
+  // border: $border_width solid black;
+  // padding: $gutter_tiny;
+  a:hover {
+    opacity: 0.7;
+  }
   span {
     display: block;
-    background: white;
+    // background: white;
     width: 100%;
-    height: 26px;
+    // height: 26px;
     color: black;
-    text-transform: uppercase;
-    margin-bottom: $gutter_tiny;
+    font-size: 1.375em;
+    margin: 0px $gutter_tiny 0px 0px;
+    // margin: $gutter_tiny $gutter_tiny 0px $gutter_tiny;
+    // text-transform: uppercase;
+    // margin-bottom: $gutter_tiny;
   }
   img {
     width: 100%;
     border-width: 0px;
   }
+  #artspaceforsale-btn-ad-container {
+    width: 468px;
+    height: 60px;
+    border: 1px solid blue;
+    position: absolute;
+    top: 80px;
+    left: 8px;
+  }
 }
 
 p.nav-caption {
-    margin: 0px $gutter_tiny $gutter_normal $gutter_tiny;
+  margin: 0px $gutter_tiny $gutter_huge 0px;
+  line-height: 1.4em; 
 }
+
 
 
 
 #sign-off {
   @include page_font;
+  font-size: 1.375em;
   text-align: right;
-  border-top: $border_width solid black;
-  margin-top: $gutter_large;
+  border-bottom: $border_width solid black;
+  margin: $gutter_large 0px $gutter_large 0px;
 }
 
 #bg-container {
@@ -182,21 +206,26 @@ ul, ol {
 
 .page-type-header {
   @include page_font;
-  border: $border_width solid black;
-  padding: $text_padding;
+  // border: $border_width solid black;
+  // padding: $text_padding;
+  font-size: 1.375em;
   text-transform: uppercase;  
-  margin-bottom: $gutter_large;
-  font-weight: $subheader_weight;
-  background: white;
+  margin: 0px 0px $gutter_large 0px;
+  font-weight: 400;
+  // background: white;
+  display: inline-block;
+  // border-top: 1px solid black;
 }
 
 .signed {
   @include page_font;
   margin-top: $gutter_large;
+  font-size: 1.375em;
 }
 
 .article-meta-container {
   @include page_font;
+  font-size: 1.375em;
   margin-bottom: $gutter_large;
 }
 
@@ -220,25 +249,30 @@ address {
 }
 
 @mixin figure {
-  padding: $gutter_small;
-  border: $border_width solid black;
   max-width: 100%;
   img {
     max-width: 100%;
   }
   .figure-caption {
-    margin-bottom: 0px;
+    margin-bottom: $gutter_small;
+    font-weight: 600;
   }
 }
 
 .figure-left {
   @include figure;
   @include float-left($gutter_small);
+  @media only screen and (max-width: 768px) {
+    margin: 0px;
+  }
 }
 
 .figure-right {
   @include figure;
   @include float-right($gutter_small);
+  @media only screen and (max-width: 768px) {
+    margin: 0px;
+  }
 }
 
 .block {
@@ -275,21 +309,12 @@ div.clear {
 .artspaceforsale-btn {
   // background-image specified inline with HTML since requires a 
   // root_path relative URL
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-size: cover;
+  // background-repeat: no-repeat;
   width: 100%;
   height: 0px;
   padding-bottom: 50%; // This ensures height is propto width since padding % is calculated from width
   position: relative;
-  .artspaceforsale-btn-ad-container {
-    width: 468px;
-    height: 60px;
-    margin: 0px auto;
-    border: 1px solid blue;
-    position: absolute;
-    top: 80px;
-    left: 3px;
-  }
 }
 
 .artspaceforsale-banner-advert-container {
@@ -297,7 +322,7 @@ div.clear {
   padding: $gutter_large $gutter_small $gutter_large $gutter_small;
   .ad-container {
     border: 1px solid blue;
-    width: auto 0px;
+    margin: auto 0px;
   }
 }
 

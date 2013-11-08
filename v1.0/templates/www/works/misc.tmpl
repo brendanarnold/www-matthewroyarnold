@@ -15,72 +15,44 @@ Misc. work by MATTHEW ROY ARNOLD
 {% endblock %}
 
 {% block maincontent %}
-  <div class="row">
-    <div class="small-12 columns">
-      <ul class="nodecoration">
-        <li><a href="#thegoodshepherd">PCS10-The Good Shepherd</a></li>
-        <li><a href="#sistinetable">Sistine Table</a></li>
-        <li><a href="#materialsstudy">Materials Study</a></li>
-        <li><a href="#lostandstolen">Lost and Stolen</a></li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="small-12 columns">
-      <h2 id="thegoodshepherd">PCS10-The Good Shepherd</h2>
-      <p>Art by instruction. Can an artist do a paint by numbers better than a non-artist?</p>
-    </div>
-  </div>
-
-  <div class="mfp-hide" id="thegoodshepherd-slideshow">
-    {% call macros.slide('PCS10-The Good Shepherd', root_path + 'img/thegoodshepherd/1.jpg', '2009', 'Acrylic on printed canvas', width='narrow') %}
-    <p><cite>&quot;This probably means as much to art as Jesus does to religion&quot;</cite></p>
-    {% endcall %}
-  </div>
-    
   <div class="row">
     <div class="small-12 large-6 columns">
       {% call macros.captioned_img(src=root_path + "img/misc_thegoodshepherd_btn.jpg",
           url="#thegoodshepherd-slideshow",
           title="PCS10-The Good Shepherd",
           is_slideshow=True) %}
-          An image of the finished work.
+          Art by instruction. Can an artist do a paint by numbers better than a non-artist?
       {% endcall %}
     </div>
-  </div>
-
-
-
-  <div class="row">
-    <div class="small-12 columns">
-      <h2 id="sistinetable">Sistine Table</h2>
-      <p>The role of authenticity is brought to the fore in this piece. Viewers are not informed that the images shown through the projector are actually of a fresco painted on the underside of the table on which it sits. It asks `Why do we visit galleries and museums?'</p>
-    </div>
-  </div>
-
-  <div class="mfp-hide" id="sistinetable-slideshow">
-    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/1.jpg', '2007', 'Oil on table and projector') }}
-    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/2.jpg', '2007', 'Oil on table and projector') }}
-    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/3.jpg', '2007', 'Oil on table and projector') }}
-    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/4.jpg', '2007', 'Oil on table and projector') }}
-  </div>
-
-  <div class="row">
     <div class="small-12 large-6 columns">
       {% call macros.captioned_img(src=root_path + "img/misc_sistinetable_btn.jpg",
           url="#sistinetable-slideshow",
           title="Sistine Table",
           is_slideshow=True) %}
+          The role of authenticity is brought to the fore in this piece. Viewers are not informed that the images shown through the projector are actually of a fresco painted on the underside of the table on which it sits. It asks `Why do we visit galleries and museums?'
           A selection of images of the installation.
       {% endcall %}
     </div>
   </div>
 
+
   <div class="row">
-    <div class="small-12 columns">
-      <h2 id="materialsstudy">Materials Study</h2>
-      <p>A work based on a sculpture of a bust of the artist incorporating plastic, sculpy, plaster, concrete and wood.</p>
+    <div class="small-12 large-6 columns">
+      {% call macros.captioned_img(src=root_path + "img/misc_materialsstudy_btn.jpg",
+          url="#materialsstudy-slideshow",
+          title="Materials Study",
+          is_slideshow=True) %}
+          A work based on a sculpture of a bust of the artist incorporating plastic, sculpy, plaster, concrete and wood.
+      {% endcall %}
+    </div>
+    <div class="small-12 large-6 columns">
+      {% call macros.captioned_img(src=root_path + 'img/works_lostandstolen_btn.jpg',
+            url='#lostandstolen-slideshow',
+            title='Lost and Stolen',
+            is_slideshow=True) %}
+      Lost and Stolen is a continuously updated document of the things that have gone missing throughout a particular persons life.
+      {% endcall %}
     </div>
   </div>
 
@@ -90,16 +62,6 @@ Misc. work by MATTHEW ROY ARNOLD
     {{ macros.slide('Untitled', root_path + 'img/materialsstudy/5.jpg', '2013', 'Concrete, perspex, oil paints, latex') }}
   </div>
 
-  <div class="row">
-    <div class="small-12 large-6 columns">
-      {% call macros.captioned_img(src=root_path + "img/misc_materialsstudy_btn.jpg",
-          url="#materialsstudy-slideshow",
-          title="Materials Study",
-          is_slideshow=True) %}
-          Sculpture exploring materials based on a bust of the artists head.
-      {% endcall %}
-    </div>
-  </div>
 
   <div class="mfp-hide" id="lostandstolen-slideshow">
     {% call macros.slide('Lost and Stolen - Arnold Brothers', root_path + 'img/lostandstolen/2.jpg', date='2010 - ongoing', 
@@ -120,22 +82,17 @@ Misc. work by MATTHEW ROY ARNOLD
     {% endcall %}
   </div>
 
-  <div class="row">
-    <div class="small-12 columns">
-      <h2 id="lostandstolen">Lost and Stolen</h2>
-      <p>Lost and Stolen is a continuously updated document of the things that have gone missing throughout a particular persons life.</p>
-    </div>
+  <div class="mfp-hide" id="sistinetable-slideshow">
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/1.jpg', '2007', 'Oil on table and projector') }}
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/2.jpg', '2007', 'Oil on table and projector') }}
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/3.jpg', '2007', 'Oil on table and projector') }}
+    {{ macros.slide('Sistine Table', root_path + 'img/sistinetable/4.jpg', '2007', 'Oil on table and projector') }}
   </div>
 
-  <div class="row">
-    <div class="small-12 large-6 columns">
-      {% call macros.captioned_img(src=root_path + 'img/works_lostandstolen_btn.jpg',
-            url='#lostandstolen-slideshow',
-            title='Lost and Stolen',
-            is_slideshow=True) %}
-      <p>Images of an example Lost and Stolen piece for Matthew and his brother Brendan.</p>
-      {% endcall %}
-    </div>
+  <div class="mfp-hide" id="thegoodshepherd-slideshow">
+    {% call macros.slide('PCS10-The Good Shepherd', root_path + 'img/thegoodshepherd/1.jpg', '2009', 'Acrylic on printed canvas', width='narrow') %}
+    <p><cite>&quot;This probably means as much to art as Jesus does to religion&quot;</cite></p>
+    {% endcall %}
   </div>
 
 {% endblock %}

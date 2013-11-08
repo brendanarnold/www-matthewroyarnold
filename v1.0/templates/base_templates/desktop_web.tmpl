@@ -8,8 +8,7 @@
   <meta name="viewport" content="width=device-width" />
   <title>{% block title %}{% endblock %}</title>
 
-  <link href='http://fonts.googleapis.com/css?family=Jura:300,600' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="{{ root_path }}css/normalize.css" />
   <link rel="stylesheet" href="{{ root_path }}css/foundation.css" />
@@ -33,7 +32,9 @@
 
   {% block footer %}
   <div class="row">
-    <p id="sign-off">Matthew Roy Arnold 2013 <a href="{{ root_path }}about.html">Contact</a></p>
+    <div class="small-12 columns">
+      <p id="sign-off">Matthew Roy Arnold 2013 <a href="{{ root_path }}about.html">Contact</a></p>
+    </div>
   </div>
   {% endblock %}
 
