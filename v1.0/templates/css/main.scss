@@ -9,6 +9,7 @@ $subheader_weight: 300;
 $page_font_size: 1em;
 $header_font_size: 5.75em;
 $site_header_font_size: 3.9em;
+$dark_color: #433735;
 
 // Define some general use mixins
 
@@ -17,6 +18,7 @@ $site_header_font_size: 3.9em;
   font-weight: 400;
   font-size: $page_font_size;
   line-height: 1.6;
+  color: $dark_color;
 }
 
 @mixin header_font {
@@ -24,6 +26,7 @@ $site_header_font_size: 3.9em;
   text-transform: uppercase;
   font-weight: 300;
   line-height: 0.9;
+  color: $dark_color;
 }
 
 // Override some of the basic elements
@@ -42,7 +45,6 @@ h2 {
   // text-transform: uppercase;
   // padding: $text_padding;
   display: inline-block;
-  // border: $border_width solid black;
   font-size: 1.75em;
   line-height: $page_font_size;
   margin: $gutter_normal 0px $gutter_normal 0px;
@@ -55,7 +57,7 @@ h1 {
   padding: 0px 0px $gutter_small 0px;
   max-width: 100%;
   position: relative;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $dark_color;
   display: inline-block;
   @media only screen and (max-width: 768px) {
     font-size: 4em;
@@ -89,7 +91,7 @@ address {
   @include page_font;
   line-height: 1.3;
   font-style: normal;
-  margin-bottom: $gutter_normal;
+  margin: 0px 0px $gutter_normal $gutter_normal;
 }
 
 
@@ -110,7 +112,7 @@ address {
   margin: $gutter_normal 0px $gutter_normal 0px;
   position: relative;
   a {
-    color: black;
+    color: $dark_color;
   }
   @media only screen and (max-width: 768px) {
     font-size: 3em;
@@ -120,15 +122,11 @@ address {
 // The breadcrumb container at the top of the page
 .page-type-header, .breadcrumb-container {
   @include page_font;
-  // border: $border_width solid black;
-  // padding: $text_padding;
   font-size: 1.375em;
   text-transform: uppercase;  
   margin: 0px 0px $gutter_large 0px;
   font-weight: 400;
-  // background: white;
   display: inline-block;
-  // border-top: 1px solid black;
   @media only screen and (max-width: 768px) {
     font-size: 1.1875em;
   }
@@ -197,8 +195,9 @@ div.nav-container {
   @include page_font;
   font-size: 1.375em;
   text-align: right;
-  border-bottom: $border_width solid black;
+  border-bottom: $border_width solid $dark_color;
   margin: 0px 0px $gutter_large 0px;
+  padding: 0px 0px $gutter_small 0px;
   @media only screen and (max-width: 768px) {
     font-size: 1.1875em;
   }
@@ -329,7 +328,7 @@ div.clear {
 
 .slideshow-launcher {
   @include page_font;
-  border: $border_width solid black;
+  border: $border_width solid $dark_color;
   padding: $text_padding;
   display: inline-block;
   margin-bottom: $gutter_normal;
@@ -361,7 +360,6 @@ div.clear {
 }
 
 .artspaceforsale-banner-advert-container {
-  border: 1px solid black;
   padding: $gutter_large $gutter_small $gutter_large $gutter_small;
   .ad-container {
     border: 1px solid blue;
@@ -370,7 +368,6 @@ div.clear {
 }
 
 .artspaceforsale-advert {
-  border: 1px solid black;
   padding: 2 * $gutter_large $gutter_small 4 * $gutter_large $gutter_small;
   p {
     text-align: center;

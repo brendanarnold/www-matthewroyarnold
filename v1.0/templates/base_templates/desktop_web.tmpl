@@ -33,7 +33,17 @@
   {% block footer %}
   <div class="row">
     <div class="small-12 columns">
-      <p id="sign-off">Matthew Roy Arnold 2013 <a href="{{ root_path }}about.html">Contact</a></p>
+      <p id="sign-off"> 
+        <a href="{{ root_path }}about.html#contact">
+          <img src="{{ root_path }}img/address-btn.png" alt="Address icon" />
+        </a>
+        <a href="mailto:matthewroyarnold@gmail.com">
+          <img src="{{ root_path }}img/email-btn.png" alt="Email icon" />
+        </a>
+        <a href="http://www.facebook.com/MatthewRoyArnold/">
+          <img src="{{ root_path }}img/facebook-btn.png" alt="Facebook logo" />
+        </a>
+      </p>
     </div>
   </div>
   {% endblock %}

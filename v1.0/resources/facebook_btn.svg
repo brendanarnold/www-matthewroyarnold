@@ -17,7 +17,21 @@
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="facebook_btn.svg">
   <defs
-     id="defs4" />
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3879"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,9 +39,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="-22.143436"
-     inkscape:cy="574.85755"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="1.0807548"
+     inkscape:cy="1054.5006"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -100,5 +114,153 @@
          x="-446.66721"
          id="tspan3017"
          sodipodi:role="line">f</tspan></text>
+    <rect
+       style="fill:none;stroke:none"
+       id="rect3837"
+       width="36.095001"
+       height="33.683998"
+       x="-105.24669"
+       y="-4.8372178"
+       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\email-btn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g3839"
+       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\email-btn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\email-btn.png"
+         y="-0.11616907"
+         x="-104.14597"
+         height="27.925898"
+         width="34.020847"
+         id="rect3760"
+         style="fill:none;stroke:#433735;stroke-width:2.07410312;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\email-btn.png"
+         inkscape:connector-curvature="0"
+         id="path3762"
+         d="M -104.20964,0.15121757 -86.816394,13.178704 -70.061434,0.15121757"
+         style="fill:none;stroke:#433735;stroke-width:2.07410312;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       id="g3843"
+       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\facebook-btn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\facebook-btn.png"
+         y="-1.1458429"
+         x="-62.514065"
+         height="30"
+         width="36"
+         id="rect3764"
+         style="fill:#433735;fill-opacity:1;stroke:none" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\facebook-btn.png"
+         sodipodi:linespacing="125%"
+         id="text2988"
+         y="26.605124"
+         x="-50.65213"
+         style="font-size:34.56811905px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial Bold"
+           y="26.605124"
+           x="-50.65213"
+           id="tspan2990"
+           sodipodi:role="line">f</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
+       x="-12.626906"
+       y="23.521814"
+       id="text3766"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3768"
+         x="-12.626906"
+         y="23.521814"
+         style="fill:#433735;fill-opacity:1">/MatthewRoyArnold</tspan></text>
+    <path
+       style="fill:#433735;fill-opacity:1;stroke:none"
+       d="m -133.8048,-4.8213835 c -4.55618,0 -8.27578,3.7195998 -8.27578,8.2757813 0.0997,1.4640676 0.44395,2.8094917 1.00547,3.9187502 l 7.24453,12.555469 7.11562,-12.297656 c 0.70366,-1.3101663 1.12304,-2.9137349 1.13438,-4.1765632 0,-4.5561815 -3.66804,-8.2757813 -8.22422,-8.2757813 z m -0.0257,5.8265625 c 1.14777,0 2.08828,0.9405059 2.08828,2.0882813 0,1.1477754 -0.94051,2.0625004 -2.08828,2.0625004 -1.14777,0 -2.0625,-0.914725 -2.0625,-2.0625004 0,-1.1477754 0.91473,-2.0882813 2.0625,-2.0882813 z"
+       id="path3776"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#433735;fill-opacity:1;stroke:#433735;stroke-width:0.80250257px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -167.55084,-3.6375455 c -5.39078,0.5843951 -6.87041,6.9051861 -5.55645,13.9236475 0.81421,4.348786 5.18857,12.88332 8.76094,16.000647 3.18881,2.782646 8.77295,3.014775 11.03383,0.641987 1.06436,-1.117043 -1.38913,-8.198509 -3.59184,-8.676618 -1.6075,-0.348911 -2.34013,2.383514 -3.86337,1.762617 -2.57443,-1.049433 -7.1769,-10.4060661 -6.70543,-12.8470043 0.38312,-1.9834803 2.9102,-0.9531959 3.67783,-2.5302461 0.81479,-1.6739735 -1.76028,-8.49132 -3.75551,-8.275028 z"
+       id="path3796"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\tel-btn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:none;stroke:#433735;stroke-width:2.07410312;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3760-1"
+       width="34.020847"
+       height="27.925898"
+       x="-146.01042"
+       y="-0.10076232"
+       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#433735;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0"
+       d="m -146.37648,19.820232 33.58758,0"
+       id="path3817"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#433735;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0"
+       d="m -121.875,-0.6575551 0,27.5875731"
+       id="path3817-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:none;stroke:none"
+       id="rect3837-4"
+       width="36.095001"
+       height="33.683998"
+       x="-62.514065"
+       y="-4.8298411"
+       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\facebook-btn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
+       x="-135.7645"
+       y="-60.623886"
+       id="text3866"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3868"
+         x="-135.7645"
+         y="-60.623886"
+         style="font-size:13px">Invisible boxes here to keep consistant height</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m -37.476659,-57.088354 -6.717514,34.648233"
+       id="path3870"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
