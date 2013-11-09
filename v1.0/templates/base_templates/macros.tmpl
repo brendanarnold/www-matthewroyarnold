@@ -13,7 +13,7 @@
 {% endmacro %}
 
 {# Don't forget to update the Space for Sale button when changing this #}
-{% macro captioned_img(src, url, title, caption='', is_slideshow=False, w="467", h="238" ) %}
+{% macro captioned_img(src, url, title, caption='', is_slideshow=False, w="467", h="244" ) %}
       <div class="nav">
         <a href="{{ url }}" {% if is_slideshow %}class="slideshow-link"{% endif %}>
           <img src="{{ src }}" width="{{ w }}px" height="{{ h }}px" alt="{{ title }}" />

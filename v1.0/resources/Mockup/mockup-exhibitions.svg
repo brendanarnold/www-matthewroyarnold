@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="7891.5048"
-     inkscape:cy="-2665.5405"
+     inkscape:cx="9470.8424"
+     inkscape:cy="-2768.3624"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1304,42 +1304,30 @@
        xlink:href="file:///C:/Users/brendan/Documents/Code/Web/MatthewRoyArnold/v1.0/resources/Mockup/screencapture.png"
        height="860"
        width="1600" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.01822996000000000"
-       id="rect3270"
-       width="507.10577"
-       height="44.424377"
-       x="7097.0151"
-       y="3863.6277" />
     <text
        xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
-       x="7132.687"
-       y="3893.9214"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI;opacity:0.8"
+       x="7448.4014"
+       y="3883.9211"
        id="text3272"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3274"
-         x="7132.687"
-         y="3893.9214">Work</tspan></text>
-    <rect
-       style="opacity:0.50000000000000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00410735999999990;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect3270-6"
-       width="488.90973"
-       height="44.442604"
-       x="7616.9736"
-       y="3862.2837" />
+         x="7448.4014"
+         y="3883.9211"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Segoe UI;-inkscape-font-specification:Segoe UI Bold">Work</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
-       x="7630.104"
-       y="3894.6067"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
+       x="7775.8184"
+       y="3884.6067"
        id="text3272-1"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3274-4"
-         x="7630.104"
-         y="3894.6067">Exhibitions</tspan></text>
+         x="7775.8184"
+         y="3884.6067"
+         style="font-size:56px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Segoe UI;-inkscape-font-specification:Segoe UI Bold">Exhibitions</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect3304"
@@ -1347,5 +1335,43 @@
        height="73.741135"
        x="7068.9863"
        y="3859.5964" />
+    <image
+       y="3240.6777"
+       x="8499.4639"
+       id="image3267-9"
+       xlink:href="file:///C:/Users/brendan/Documents/Code/Web/MatthewRoyArnold/v1.0/resources/Mockup/screencapture.png"
+       height="860"
+       width="1600" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
+       x="9311.3535"
+       y="3731.3027"
+       id="text3272-1-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3274-4-2"
+         x="9311.3535"
+         y="3731.3027"
+         style="font-size:56px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Segoe UI;-inkscape-font-specification:Segoe UI Bold">Exhibitions</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3304-4"
+       width="46.467018"
+       height="73.741135"
+       x="8749.9629"
+       y="3871.8965" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.8;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
+       x="8818.2715"
+       y="3726.5359"
+       id="text3272-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3274-8"
+         x="8818.2715"
+         y="3726.5359"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Segoe UI;-inkscape-font-specification:Segoe UI Bold">Work</tspan></text>
   </g>
 </svg>

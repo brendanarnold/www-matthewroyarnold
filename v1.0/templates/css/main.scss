@@ -56,6 +56,9 @@ h1 {
   position: relative;
   border-bottom: 1px solid black;
   display: inline-block;
+  @media only screen and (max-width: 768px) {
+    font-size: 4em;
+  }
 }
 
 h1#index-site-header {
@@ -73,28 +76,39 @@ table {
 div.nav {
   @include page_font;
   margin: 0px 0px $gutter_small 0px;
-  background: white;
+  background: black;
   position: relative;
   // border: $border_width solid black;
   // padding: $gutter_tiny;
   a:hover {
-    opacity: 0.7;
+    img {
+      opacity: 0.7;
+    }
   }
   span {
     display: block;
-    // background: white;
     width: 100%;
-    // height: 26px;
-    color: black;
-    font-size: 1.375em;
-    margin: 0px $gutter_tiny 0px 0px;
-    // margin: $gutter_tiny $gutter_tiny 0px $gutter_tiny;
-    // text-transform: uppercase;
-    // margin-bottom: $gutter_tiny;
+    color: white;
+    font-size: 2.625em;
+    font-weight: 600;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.9;
+    line-height: 1.5em;
+    margin: 0px 15px 0px 15px;
+    // margin: 0px $gutter_tiny 0px 0px;
+    @media only screen and (max-width: 768px) {
+      line-height: 1.3;
+      font-size: 2em;
+      margin: 0px 5px 0px 5px;
+    }
   }
   img {
     width: 100%;
     border-width: 0px;
+    position: relative;
+    opacity: 0.95;
   }
   #artspaceforsale-btn-ad-container {
     width: 468px;
@@ -120,6 +134,9 @@ p.nav-caption {
   text-align: right;
   border-bottom: $border_width solid black;
   margin: $gutter_large 0px $gutter_large 0px;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.1875em;
+  }
 }
 
 #bg-container {
@@ -201,6 +218,9 @@ ul, ol {
   a {
     color: black;
   }
+  @media only screen and (max-width: 768px) {
+    font-size: 3em;
+  }
 }
 
 
@@ -215,6 +235,9 @@ ul, ol {
   // background: white;
   display: inline-block;
   // border-top: 1px solid black;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.1875em;
+  }
 }
 
 .signed {
@@ -252,6 +275,9 @@ address {
   max-width: 100%;
   img {
     max-width: 100%;
+    @media only screen and (max-width: 481px) {
+      width: 100%;
+    }
   }
   .figure-caption {
     margin-bottom: $gutter_small;
@@ -262,7 +288,8 @@ address {
 .figure-left {
   @include figure;
   @include float-left($gutter_small);
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 481px) {
+    width: 100%;
     margin: 0px;
   }
 }
@@ -270,7 +297,8 @@ address {
 .figure-right {
   @include figure;
   @include float-right($gutter_small);
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 481px) {
+    width: 100%;
     margin: 0px;
   }
 }
@@ -296,7 +324,6 @@ div.clear {
     @include page_font;
     margin: 0px 0px $gutter_normal 0px;
     .label {
-      width: 157px;
       vertical-align: top;
       text-transform: uppercase;
       padding-right: $gutter_normal;
