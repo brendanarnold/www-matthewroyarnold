@@ -13,16 +13,18 @@
 {% endmacro %}
 
 {# Don't forget to update the Space for Sale button when changing this #}
-{% macro captioned_img(src, url, title, caption='', is_slideshow=False, w="467", h="244" ) %}
+{% macro captioned_img(src, url, title, is_slideshow=False, data_interchange='') %}
+    <div class="nav-container {% if caller %}bottom-gutter{% endif %}">
       <div class="nav">
         <a href="{{ url }}" {% if is_slideshow %}class="slideshow-link"{% endif %}>
-          <img src="{{ src }}" width="{{ w }}px" height="{{ h }}px" alt="{{ title }}" />
+          <img src="{{ src }}" {% if data_interchange %}data-interchange="{{ data_interchange }}"{% endif %} alt="{{ title }}" />
           <span>{{ title }}</span>
         </a>
       </div>
       {% if caller %}
       <p class="nav-caption">{{ caller() }}</p>
       {% endif %}
+    </div>
 {% endmacro %}
 
 {% macro standard_header(title='') %}
@@ -49,7 +51,7 @@
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <div class="page-type-header">
+      <div class="breadcrumb-container">
       {% for bc_url, bc_name in breadcrumb_urls %}
         {% if not loop.first %}/ {% endif %}<a href="{{ bc_url }}">{{ bc_name }}</a>{% if loop.last %} / {{ title }}{% endif %}
       {% endfor %} 

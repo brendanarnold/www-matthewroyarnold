@@ -36,54 +36,34 @@ MATTHEW ROY ARNOLD - Bristol, UK based fine artist
 
 <div class="row">
   <div class="large-6 small-12 columns">
-    <div class="nav">
-      <a href="{{ root_path }}works/">
-        <img src="{{ root_path }}img/small/home_works_btn.jpg"
-          data-interchange="[{{ root_path }}img/small/home_works_btn.jpg, (default)], [{{ root_path }}img/large/home_works_btn.jpg, (small)]"
-          alt="An example work from the interactions range" />
-        <span class="index-caption">Works</span>
-      </a>
-    </div>
+    {{ macros.captioned_img(root_path + "img/small/home_works_btn.jpg",
+          root_path + "works/", 
+          "Works",
+          data_interchange="[" + root_path + "img/small/home_works_btn.jpg, (default)], [" + root_path + "img/large/home_works_btn.jpg, (small)]") }}
   </div>
   <div class="large-6 small-6 columns">
-    <div class="nav">
-      <a href="{{ root_path }}exhibitions/">
-        <img src="{{ root_path }}img/small/home_exhibitions_btn.jpg" 
-          data-interchange="[{{ root_path }}img/small/home_exhibitions_btn.jpg, (default)], [{{ root_path }}img/large/home_exhibitions_btn.jpg, (small)]"
-          alt="Exhibitions" />
-        <span class="index-caption">Exhibitions</span>
-      </a>
-    </div>
+    {{ macros.captioned_img(root_path + "img/small/home_exhibitions_btn.jpg",
+          root_path + "exhibitions/",
+          "Exhibitions",
+          data_interchange="[" + root_path + "img/small/home_exhibitions_btn.jpg, (default)], [" + root_path + "img/large/home_exhibitions_btn.jpg, (small)]") }}
   </div>
   <div class="large-4 small-6 columns">
-    <div class="nav">
-      <a href="{{ root_path }}acquire/index.html">
-        <img src="{{ root_path }}img/small/home_acquire_btn.jpg" 
-          data-interchange="[{{ root_path }}img/small/home_acquire_btn.jpg, (default)], [{{ root_path }}img/large/home_acquire_btn.jpg, (small)]"
-          alt="Acquire work" />
-        <span class="index-caption">Acquire Work</span>
-      </a>
-    </div>
+    {{ macros.captioned_img(root_path + "img/small/home_acquire_btn.jpg",
+          root_path + "acquire/",
+          "Acquire Work",
+          data_interchange="[" + root_path + "img/small/home_acquire_btn.jpg, (default)], [" + root_path + "img/large/home_acquire_btn.jpg, (small)]") }}
   </div>
   <div class="large-4 small-6 columns">
-    <div class="nav">
-      <a href="{{ root_path }}about.html">
-        <img src="{{ root_path }}img/small/home_about_btn.jpg" 
-          data-interchange="[{{ root_path }}img/small/home_about_btn.jpg, (default)], [{{ root_path }}img/large/home_about_btn.jpg, (small)]"
-          alt="Matt at work" />
-        <span class="index-caption">About</span>
-      </a>
-    </div>
+    {{ macros.captioned_img(root_path + "img/small/home_about_btn.jpg",
+          root_path + "about.html",
+          "About",
+          data_interchange="[" + root_path + "img/small/home_about_btn.jpg, (default)], [" + root_path + "img/large/home_about_btn.jpg, (small)]") }}
   </div>
-  <div class="large-4 small-6 columns">
-    <div class="nav">
-      <a href="http://www.facebook.com/MatthewRoyArnold/">
-        <img src="{{ root_path }}img/small/home_news_btn.jpg"
-          data-interchange="[{{ root_path }}img/small/home_news_btn.jpg, (default)], [{{ root_path }}img/large/home_news_btn.jpg, (small)]"
-          alt="News on Facebook" />
-        <span class="index-caption">News</span>
-      </a>
-    </div>
+  <div class="large-4 small-6 columns bottom-gutter">
+    {{ macros.captioned_img(root_path + "img/small/home_news_btn.jpg",
+          "http://www.facebook.com/MatthewRoyArnold/",
+          "News",
+          data_interchange="[" + root_path + "img/small/home_news_btn.jpg, (default)], [" + root_path + "img/large/home_news_btn.jpg, (small)]") }}
   </div>
 </div>
 {% endblock %}
