@@ -19,28 +19,23 @@ Acquiring work by MATTHEW ROY ARNOLD
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {% call macros.captioned_img(src=root_path + "img/acquire_individual_btn.jpg",
+      {{ macros.captioned_img(src=root_path + "img/acquire_individual_btn.jpg",
             url=root_path + "acquire/individual.html",
-            title="Individuals") %}
-      {% endcall %}
+            title="Individuals") }}
     </div>
 
     <div class="small-12 large-6 columns">
-      {% call macros.captioned_img(src=root_path + "img/acquire_corporate_btn.jpg",
+      {{ macros.captioned_img(src=root_path + "img/acquire_corporate_btn.jpg",
             url=root_path + "acquire/corporate.html",
-            title="Corporate") %}
-            Information for companies wanting to obtain work.'
-      {% endcall %}
+            title="Corporate") }}
     </div>
   </div>
 
   <div class="row">
     <div class="small-12 large-6 columns">
-      {% call macros.captioned_img(src=root_path + "img/acquire_galleries_btn.jpg",
+      {{ macros.captioned_img(src=root_path + "img/acquire_galleries_btn.jpg",
             url=root_path + "acquire/galleries.html",
-            title="Galleries") %}
-            Information for galleries wishing to exhibit work.
-      {% endcall %}
+            title="Galleries") }}
     </div>
   </div>
 {% endblock %}
