@@ -156,7 +156,7 @@ div.nav-container {
       position: absolute;
       top: 0px;
       left: 0px;
-      opacity: 0.9;
+      opacity: 0.8;
       line-height: 1.5em;
       margin: 0px 15px 0px 15px;
       @media only screen and (max-width: 768px) {
@@ -261,6 +261,9 @@ div.nav-container {
   @include page_font;
   margin-top: $gutter_normal;
   font-size: 1.375em;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.1875em;
+  }
 }
 
 // Used in articles to contain e.g. date, location of exhibition
@@ -268,6 +271,9 @@ div.nav-container {
   @include page_font;
   font-size: 1.375em;
   margin-bottom: $gutter_large;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.1875em;
+  }
 }
 
 // Mixins for figures
