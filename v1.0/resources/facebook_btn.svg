@@ -42,9 +42,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="-159.93815"
-     inkscape:cy="1055.466"
+     inkscape:zoom="4"
+     inkscape:cx="-127.98408"
+     inkscape:cy="1048.9833"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -120,60 +120,61 @@
     <rect
        style="fill:none;stroke:none"
        id="rect3837"
-       width="54.002754"
-       height="50.995892"
-       x="-142.80089"
-       y="-19.330442"
+       width="48"
+       height="44"
+       x="-143.28145"
+       y="-11.822136"
        inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\email-btn.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
-       style="fill:none;stroke:#433735;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#433735;stroke-width:1.99034989;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3760"
-       width="50.896992"
-       height="41.994797"
-       x="-141.15282"
-       y="-11.886077"
+       width="46.009651"
+       height="36.009647"
+       x="-142.31465"
+       y="-4.7116504"
        inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\email-btn.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#433735;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m -141.24935,-11.374427 26.02254,19.5396557 25.067564,-19.5396557"
+       style="fill:none;stroke:#433735;stroke-width:1.98676133;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -142.40338,-4.274672 23.43666,16.756512 22.576579,-16.756512"
        id="path3762"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\email-btn.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
-       id="g3843"
+       id="g4359"
+       transform="matrix(0.89123462,0,0,0.88372093,-9.3483819,3.6835546)"
        inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\facebook-btn.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       transform="matrix(1.496052,0,0,1.5,14.824384,-11.602666)">
+       inkscape:export-ydpi="90">
       <rect
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
          inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\facebook-btn.png"
-         y="-1.1458429"
-         x="-62.514065"
-         height="30"
-         width="36"
+         y="-11.32143"
+         x="-85.949905"
+         height="43"
+         width="53.857872"
          id="rect3764"
          style="fill:#433735;fill-opacity:1;stroke:none" />
       <text
+         transform="scale(0.99868313,1.0013186)"
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
          inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\facebook-btn.png"
          sodipodi:linespacing="125%"
          id="text2988"
-         y="26.605124"
-         x="-50.65213"
-         style="font-size:34.56811905px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
+         y="29.266434"
+         x="-68.043434"
+         style="font-size:51.7838974px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Segoe UI;-inkscape-font-specification:Segoe UI"
          xml:space="preserve"><tspan
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial Bold"
-           y="26.605124"
-           x="-50.65213"
+           y="29.266434"
+           x="-68.043434"
            id="tspan2990"
            sodipodi:role="line">f</tspan></text>
     </g>
@@ -198,48 +199,55 @@
        inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\tel-btn.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
-    <path
-       style="fill:#433735;fill-opacity:1;stroke:none"
-       d="m -185.68902,-17.420528 c -6.81628,0 -12.381,5.579399 -12.381,12.4136717 0.14916,2.1961014 0.66417,4.21423755 1.50424,5.8781253 l 10.83819,18.833204 10.64534,-18.4464845 c 1.05271,-1.96524945 1.68012,-4.3706023 1.69709,-6.2648448 0,-6.8342727 -5.48758,-12.4136717 -12.30386,-12.4136717 z m -0.0384,8.7398435 c 1.71712,0 3.12418,1.4107588 3.12418,3.1324219 0,1.7216631 -1.40706,3.0937506 -3.12418,3.0937506 -1.71712,0 -3.08561,-1.3720875 -3.08561,-3.0937506 0,-1.7216631 1.36849,-3.1324219 3.08561,-3.1324219 z"
-       id="path3776"
-       inkscape:connector-curvature="0"
+    <g
+       id="g4372"
+       transform="translate(0,1.5)"
        inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="fill:none;stroke:#433735;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect3760-1"
-       width="50.894417"
-       height="41.997459"
-       x="-204.65512"
-       y="-10.449479"
-       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <path
-       style="fill:none;stroke:#433735;stroke-width:1.4980247;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.4980247, 1.4980247;stroke-dashoffset:0"
-       d="m -204.49691,20.072226 50.24877,0"
-       id="path3817"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <path
-       style="fill:none;stroke:#433735;stroke-width:1.4980247;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.4980247, 1.4980247;stroke-dashoffset:0"
-       d="m -167.84142,-10.644455 0,41.38136"
-       id="path3817-7"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
+         inkscape:connector-curvature="0"
+         id="path3776"
+         d="m -189.07608,-9.80159 c -5.98906,0 -10.87845,4.9022878 -10.87845,10.9071586 0.13106,1.9295842 0.58356,3.7028009 1.32168,5.1647606 l 9.52288,16.5476208 9.35343,-16.2078333 c 0.92495,-1.7267483 1.47622,-3.8401894 1.49113,-5.5045481 0,-6.0048708 -4.82161,-10.9071586 -10.81067,-10.9071586 z m -0.0337,7.6791833 c 1.50873,0 2.74503,1.2395502 2.74503,2.75227363 0,1.51272337 -1.2363,2.71829547 -2.74503,2.71829547 -1.50873,0 -2.71114,-1.2055721 -2.71114,-2.71829547 0,-1.51272343 1.20241,-2.75227363 2.71114,-2.75227363 z"
+         style="fill:#433735;fill-opacity:1;stroke:none" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
+         y="-3.2364242"
+         x="-205.73775"
+         height="35.95784"
+         width="45.957844"
+         id="rect3760-1"
+         style="fill:none;stroke:#433735;stroke-width:2.04215813;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
+         inkscape:connector-curvature="0"
+         id="path3817"
+         d="m -205.60146,22.891073 44.15062,0"
+         style="fill:none;stroke:#433735;stroke-width:1.31622553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.31622559, 1.31622559;stroke-dashoffset:0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path3817-7"
+         d="m -173.39445,-3.7443021 0,35.8290201"
+         style="fill:none;stroke:#433735;stroke-width:1.31620395;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.31620388, 1.31620388;stroke-dashoffset:0" />
+    </g>
     <rect
        style="fill:none;stroke:none"
        id="rect3837-4"
-       width="54"
-       height="51"
-       x="-78.699913"
-       y="-19.321432"
+       width="48"
+       height="44"
+       x="-85.949913"
+       y="-12.32143"
        inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\facebook-btn.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -263,10 +271,10 @@
     <rect
        style="fill:none;stroke:none"
        id="rect3837-6"
-       width="54"
-       height="51"
-       x="-206.20992"
-       y="-17.897221"
+       width="48"
+       height="44"
+       x="-206.75882"
+       y="-8.7575054"
        inkscape:export-filename="C:\Users\brendan\Documents\Code\Web\MatthewRoyArnold\v1.0\resources\address-btn.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />

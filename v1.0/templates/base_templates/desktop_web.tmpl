@@ -49,37 +49,17 @@
   {% endblock %}
 
   <script>
-  document.write('<script src={{ root_path }}' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
+  //document.write('<script src={{ root_path }}' +
+  //('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  //'.js><\/script>')
   </script>
   
+  <script src="{{ root_path }}js/vendor/jquery.js"></script>
   <script src="{{ root_path }}js/foundation/foundation.js"></script>
   <script src="{{ root_path }}js/foundation/foundation.interchange.js"></script>
   <script src="{{ root_path }}js/jquery.magnific-popup.js"></script> 
+  <script src="{{ root_path }}js/mra.js"></script>
 
-  <script>
-    // The script for the slideshow code
-    // see - http://stackoverflow.com/questions/18067062/
-    $('.slideshow-link').click(function() {
-      // Build an items list for use in Magnific Popup
-      var items = [];
-      $( $(this).attr('href') ).find('.slide').each(function() {
-        items.push(
-          { src : $(this) }
-        );
-      });
-      $.magnificPopup.open({
-        items: items,
-        gallery: {
-          enabled: true
-        }
-      });
-      // Put this in here to prevent littering the history with URL
-      // fragments - cancels the click event continuation
-      return false;
-    });
-  </script>
 
   <!--
 
